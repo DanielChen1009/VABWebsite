@@ -40,7 +40,7 @@
     let visible = true;
 </script>
 <div class="frame">
-    <img class="background" src="./src/imgs/landingbg.png" width="100%">
+    <img class="background" src="./src/imgs/landingbg.png" style="width: 100vw">
 </div>
 
 {#key visible}
@@ -76,7 +76,7 @@
         <button class="pagenavbut" on:click={() => {goto("/join-us")}}>Join Us!</button>
     </div>
 {/if}
-<div class="textbg frame">
+<div class="textbg frame" style="height: 70vh">
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
@@ -95,7 +95,7 @@
         <div class="titletxt">Partners & Clients</div>
     </div>
     <div class="sponsors">
-
+        <img class="sponsorlogo" src="./src/imgs/futurex.png" onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
@@ -106,6 +106,10 @@
 </div>
 
 <style>
+    .sponsorlogo {
+        justify-content: center;
+    }
+
     .removebg {
         background-color: transparent !important;
     }
@@ -118,12 +122,12 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        height: 7vh;
+        height: 6vh;
         width: 30vw;
         border-radius: 3.5vh;
         background-color: black;
         color: white;
-        font-size: 4vh;
+        font-size: 3vh;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         letter-spacing: 3px;
@@ -131,6 +135,8 @@
 
     .sponsors {
         height: 30vh;
+        display: flex;
+        padding-left: 2vh;
     }
 
     .buttondiv {
@@ -176,7 +182,7 @@
 
     .text {
         color: black;
-        font-size: 6.5vh;
+        font-size: 4vh;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         line-height: 75px;
