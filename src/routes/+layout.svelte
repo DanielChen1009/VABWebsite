@@ -5,9 +5,9 @@
     <slot />
 </main>
 
-<div class="extrainfo">
+<footer class="extrainfo">
 
-</div>
+</footer>
 
 <style>
     .extrainfo {

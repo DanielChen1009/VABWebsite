@@ -49,7 +49,7 @@
     <img class={"blurb " + (visible ? "" : "dimmed")} transition:fade src="./src/imgs/blurb.png">
 {/key}
 {#if visible}
-    <img class="hamburger" transition:fade src="./src/imgs/hamburger.png" on:click={() => {
+    <img class="hamburger" transition:fade={{duration: 100}} src="./src/imgs/hamburger.png" on:click={() => {
             visible=false;
     }}>
     <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
