@@ -8,6 +8,7 @@
     import {fly, fade, crossfade} from "svelte/transition"
     import { beforeUpdate, afterUpdate } from 'svelte';
     import { onMount } from 'svelte';
+    import {goto} from "$app/navigation";
 
     onMount(async () => {document.addEventListener("mousedown", (e) => {
         if (!visible && e.target.id === "dim") {
@@ -67,22 +68,22 @@
             </div>
         </div>
         <button class="pagenavbut bolden">Home</button>
-        <button class="pagenavbut">Founder's Story</button>
-        <button class="pagenavbut">What We Do</button>
-        <button class="pagenavbut">Meet the Team</button>
-        <button class="pagenavbut">Members & Partners</button>
-        <button class="pagenavbut">Sponsors & Clients</button>
-        <button class="pagenavbut">Join Us!</button>
+        <button class="pagenavbut" on:click={() => {goto("/founder")}}>Founder's Story</button>
+        <button class="pagenavbut" on:click={() => {goto("/what-we-do")}}>What We Do</button>
+        <button class="pagenavbut" on:click={() => {goto("/meet-the-team")}}>Meet the Team</button>
+        <button class="pagenavbut" on:click={() => {goto("/members-partners")}}>Members & Partners</button>
+        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients")}}>Sponsors & Clients</button>
+        <button class="pagenavbut" on:click={() => {goto("/join-us")}}>Join Us!</button>
     </div>
 {/if}
 <div class="textbg frame">
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
-        transport? We hope you’ll <a class="link" href="google.com">join us</a> on the path to our maiden voyage!
+        transport? We hope you’ll <a class="link" on:click={() => {goto("/join-us")}}>join us</a> on the path to our maiden voyage!
     </div>
     <div class="buttondiv removebg">
-        <button class="linkbutton">
+        <button class="linkbutton" on:click={() => {goto("/join-us")}}>
             Become a Member
             <img src="./src/imgs/ButtonArrow.png">
         </button>
@@ -104,14 +105,9 @@
     </div>
 </div>
 
-<div id="footer-ph" class="frame darken"></div>
-
 <style>
     .removebg {
         background-color: transparent !important;
-    }
-    .darken {
-        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .cutoff {
