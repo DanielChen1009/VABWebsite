@@ -161,7 +161,7 @@
         text-align: left;
 
         background-color: #D9D9D9;
-        padding: 1vh 2vw 1vh 2vw;
+        padding: 2vh 2vw 2vh 2vw;
     }
     .age {
         display: inline-block;
@@ -254,10 +254,5 @@
         position: absolute;
         justify-content: center;
         overflow: hidden;
-    }
-
-    .banner {
-        letter-spacing: 0;
-        background-color: rgba(0, 0, 0, 0.2);
     }
 </style>
