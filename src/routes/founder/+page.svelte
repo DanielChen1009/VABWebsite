@@ -1,6 +1,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 <script>
 
@@ -28,9 +29,75 @@
     <div class="dot orange center" style="top: 200vh;"></div>
     <div class="dot orange center" style="top: 240vh;"></div>
     <div class="dot black center" style="top: 280vh;"></div>
+
+    <div class="entrycontainer centerleft" style="top: 34vh">
+        <div class="age">
+            Age 0
+        </div>
+        <div class="content">
+            Alan Zhang was born in 2004 in Guangzhou, China. At the young age of 11,
+            he sparked an interest in making DIY kits after learning to use a soldering
+            iron and glue gun.
+        </div>
+        <div style="width: 100%; display:flex; justify-content: right">
+            <div class="timeimgwrapper">
+                <img src="./src/imgs/founderimgs/p1.jpeg" class="timelineimg">
+            </div>
+        </div>
+    </div>
 </div>
 
 <style>
+    .timelineimg {
+        width: 97%;
+    }
+    .timeimgwrapper {
+        display: flex;
+        width: 60%;
+        background-color: #FF2700;
+        margin: 0;
+        justify-content: right;
+    }
+    .centerleft {
+        left: 4vw;
+    }
+
+    .centerright {
+        right: 4vw;
+    }
+
+    .content {
+        position: relative;
+        color: black;
+        font-size: 2.5vh;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0.40px;
+        word-wrap: break-word;
+        text-align: left;
+
+        background-color: #D9D9D9;
+        padding: 1vh 2vw 1vh 2vw;
+    }
+    .age {
+        display: inline-block;
+        color: white;
+        font-size: 2vh;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.36px;
+        word-wrap: break-word;
+
+        background-color: rgba(255, 39, 0, 0.80);
+        padding: 0 1vw 0 1vw;
+    }
+    .entrycontainer {
+        display: block;
+        position: absolute;
+        width: 40vw;
+    }
     .black {
         background-color: black;
     }
