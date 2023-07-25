@@ -76,7 +76,7 @@
         <button class="pagenavbut" on:click={() => {goto("/join-us")}}>Join Us!</button>
     </div>
 {/if}
-<div class="textbg frame" style="height: 70vh">
+<div class="textbg frame" style="height: 70vh; margin: 2vh 2vw 0 2vw; border-bottom: 1vh #C9C9C9 solid">
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
@@ -90,11 +90,12 @@
     </div>
 </div>
 
-<div class="cutoff textbg frame">
+<div class="cutoff textbg frame" style="margin: 0 2vw 2vh 2vw;">
     <div class="title">
         <div class="titletxt">Partners & Clients</div>
     </div>
     <div class="sponsors">
+        <img class="sponsorlogo" src="./src/imgs/met.png" onclick="window.open('https://met.berkeley.edu/', '_blank')">
         <img class="sponsorlogo" src="./src/imgs/futurex.png" onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
@@ -140,7 +141,6 @@
     }
 
     .buttondiv {
-        background-color: white;
         height: 20vh;
         text-align: center;
     }
@@ -159,9 +159,8 @@
     }
 
     .title {
-        background-color: white;
+        text-align: center;
         height: 30vh;
-        width: 100vw;
         padding-left: 10vw;
     }
 
@@ -297,12 +296,11 @@
 
     .frame {
         height: 100vh;
-        width: 100vw;
         overflow: hidden;
     }
 
     .textbg {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.05);
     }
 
     :global(body) {
