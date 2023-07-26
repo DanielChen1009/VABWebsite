@@ -1,3 +1,7 @@
+<script>
+    import Menu from "../../lib/Menu.svelte";
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
@@ -65,6 +69,9 @@
         <div class="title">Recruitment Form</div>
     </div>
 </div>
+
+<Menu includeMainLogo={false}/>
+
 <style>
     input, label {
         display:inline-block;

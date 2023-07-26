@@ -4,9 +4,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 <script>
-    import {fly} from 'svelte/transition'
     import {onMount} from "svelte";
     import EntryContainer from "./EntryContainer.svelte";
+    import Menu from "../../lib/Menu.svelte";
     let h1 = 0, h2 = 0, h3 = 0, h4 = 0, h5 = 0, h6 = 0;
     let clientHeight;
     let mounted;
@@ -161,6 +161,8 @@
     </div>
 </div>
 {/if}
+
+<Menu includeMainLogo={false}/>
 <style>
     .timelineimg {
         width: 97%;

@@ -2,7 +2,7 @@
     import {fade} from "svelte/transition";
 
     let hovered = false;
-    export let height;
+    export let width;
     export let src;
 </script>
 
@@ -10,7 +10,9 @@
     <img src={src} alt="" style="
         position: absolute;
         transform: translateX(-50%);
-        height: {height}%;">
+        height: 100%;
+        object-fit: cover;
+        width: {width}%;">
     {#if hovered}
         <slot/>
     {/if}

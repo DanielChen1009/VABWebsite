@@ -7,6 +7,7 @@
 <script>
     import {fade} from "svelte/transition";
     import InfoBox from "./InfoBox.svelte";
+    import {Menu} from "$lib";
 </script>
 
 <div class="banner bannersize">
@@ -24,8 +25,8 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -34,10 +35,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -46,10 +47,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -58,10 +59,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Shasi Pinninti</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/shasipfp.jpeg" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -72,10 +73,10 @@
 </div>
 <div class="halfsize" style="padding-top: 0">
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Christine Gu</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -84,10 +85,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Antonia Dauria</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -96,10 +97,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Daniel Chen</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/danielpfp.jpeg" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -108,10 +109,10 @@
         </div>
     </div>
     <div class="entrycontainer">
-        <div class="titlecontainer">Alan Zhang</div>
+        <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" height=100>
-                <div class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea commodo consequat. Duis aute
@@ -120,6 +121,8 @@
         </div>
     </div>
 </div>
+
+<Menu includeMainLogo={false}/>
 
 <style>
     .textinfo {

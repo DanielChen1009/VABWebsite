@@ -9,14 +9,7 @@
     import { beforeUpdate, afterUpdate } from 'svelte';
     import { onMount } from 'svelte';
     import {goto} from "$app/navigation";
-
-    onMount(async () => {document.addEventListener("mousedown", (e) => {
-        if (!visible && e.target.id === "dim") {
-            visible = true;
-            console.log(e.target.id)
-            console.log(e.target.tagName)
-        }
-    });})
+    import {Menu} from "$lib/index.ts";
 
     let scrollPos;
     beforeUpdate(() => {
@@ -27,55 +20,12 @@
         if (scrollPos) document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
     });
 
-    const [send, receive] = crossfade({
-        duration: (d) => Math.sqrt(d * 200),
-
-        fallback(node, params) {
-            const style = getComputedStyle(node);
-            const transform = style.transform === 'none' ? '' : style.transform;
-
-            return fade;
-        }
-    });
-    let visible = true;
 </script>
 <div class="frame">
     <img class="background" src="./src/imgs/landingbg.png" style="width: 100vw">
 </div>
 
-{#key visible}
-    <img class={"logoimg " + "dimmed"} out:fade src="./src/imgs/VABLogo.png">
-    <img class={"logotxt " + "dimmed"} out:fade src="./src/imgs/logotxt.png">
-    <img class={"blurb " + (visible ? "" : "dimmed")} transition:fade src="./src/imgs/blurb.png">
-{/key}
-{#if visible}
-    <img class="hamburger" transition:fade={{duration: 100}} src="./src/imgs/hamburger.png" on:click={() => {
-            visible=false;
-    }}>
-    <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
-    <img class="logoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/imgs/VABLogo.png">
-{/if}
-{#if !visible}
-    <div id="dim" class="dimmer" transition:fade>
-    </div>
-    <div id="menu" transition:fly={{duration:500, x: -300}} class="menu">
-        <div id="logos" class="minilogo">
-            <div class="centering">
-                <img class="minilogoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/imgs/VABLogo.png" on:click={() => {
-            visible=true
-        }}>
-                <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
-            </div>
-        </div>
-        <button class="pagenavbut bolden">Home</button>
-        <button class="pagenavbut" on:click={() => {goto("/founder")}}>Founder's Story</button>
-        <button class="pagenavbut" on:click={() => {goto("/what-we-do")}}>What We Do</button>
-        <button class="pagenavbut" on:click={() => {goto("/meet-the-team")}}>Meet the Team</button>
-        <button class="pagenavbut" on:click={() => {goto("/members-partners")}}>Members & Partners</button>
-        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients")}}>Sponsors & Clients</button>
-        <button class="pagenavbut" on:click={() => {goto("/join-us")}}>Join Us!</button>
-    </div>
-{/if}
+<Menu includeMainLogo={true}/>
 <div class="textbg frame" style="height: 70vh; margin: 2vh 2vw 0 2vw; border-bottom: 1vh #C9C9C9 solid">
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
