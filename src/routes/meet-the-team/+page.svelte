@@ -6,7 +6,7 @@
 
 <script>
     import {fade} from "svelte/transition";
-    import InfoBox from "./InfoBox.svelte";
+    import InfoBox from "../../lib/InfoBox.svelte";
     import {Menu} from "$lib";
 </script>
 
@@ -17,7 +17,7 @@
         <img class="bannerimg" src="src/imgs/meettheteamimgs/banner.png">
     </div>
     <div class="title bannersize">
-        MEET THE TEAM
+        Meet Our Leadership
     </div>
 </div>
 
@@ -25,7 +25,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p1" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -37,7 +37,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p2" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -49,7 +49,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p3" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -61,7 +61,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Shasi Pinninti</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/shasipfp.jpeg" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/shasipfp.jpeg" id="p4" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -75,7 +75,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Christine Gu</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p5" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -87,7 +87,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Antonia Dauria</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p6" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -99,7 +99,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Daniel Chen</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/danielpfp.jpeg" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/danielpfp.jpeg" id="p7" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -111,7 +111,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" width=100>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p8" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex

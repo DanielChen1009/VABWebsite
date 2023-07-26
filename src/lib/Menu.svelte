@@ -31,8 +31,8 @@
 </script>
 {#if includeMainLogo}
     {#key visible}
-        <img class={"logoimg " + "dimmed"} out:fade src="./src/imgs/VABLogo.png">
-        <img class={"logotxt " + "dimmed"} out:fade src="./src/imgs/logotxt.png">
+        <img class={"logoimg " + "dimmed"} src="./src/imgs/VABLogo.png">
+        <img class={"logotxt " + "dimmed"} src="./src/imgs/logotxt.png">
         <img class={"blurb " + (visible ? "" : "dimmed")} transition:fade src="./src/imgs/blurb.png">
     {/key}
 {/if}
@@ -60,12 +60,12 @@
                 <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
             </div>
         </div>
-        <button class="pagenavbut bolden" on:click={() => {goto("/"); visible = true}}>Home</button>
-        <button class="pagenavbut" on:click={() => {goto("/founder"); visible = true}}>Founder's Story</button>
-        <button class="pagenavbut" on:click={() => {goto("/what-we-do"); visible = true}}>What We Do</button>
-        <button class="pagenavbut" on:click={() => {goto("/meet-the-team"); visible = true}}>Meet the Team</button>
-        <button class="pagenavbut" on:click={() => {goto("/members-partners"); visible = true}}>Members & Partners</button>
-        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients"); visible = true}}>Sponsors & Clients</button>
+        <button class="pagenavbut bolden" on:click={() => {goto("/");}}>Home</button>
+        <button class="pagenavbut" on:click={() => {goto("/founder");}}>Founder's Story</button>
+        <button class="pagenavbut" on:click={() => {goto("/what-we-do");}}>What We Do</button>
+        <button class="pagenavbut" on:click={() => {goto("/meet-the-team");}}>Meet the Team</button>
+        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>
+        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>
         <button class="pagenavbut" on:click={() => {goto("/join-us"); visible = true}}>Join Us!</button>
     </div>
 {/if}
