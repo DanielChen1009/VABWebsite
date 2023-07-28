@@ -31,13 +31,13 @@
         If any of our 3 goals pique your interest, you may be a great fit for one of our subteams!
     </div>
     <div class="stcontainer center color">
-        <div class="st">
-            <InfoBox src="./src/imgs/landingbg.png" id="tag1" transform={false}>
-                <div class="internaltxt" transition:fade>
-                    Hardware
-                </div>
-            </InfoBox>
-        </div>
+            <div class="st">
+                <InfoBox src="./src/imgs/landingbg.png" id="tag1" transform={false}>
+                    <div class="internaltxt" transition:fade>
+                        Hardware
+                    </div>
+                </InfoBox>
+            </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
             <InfoBox src="./src/imgs/landingbg.png" id="tag2" transform={false}>
