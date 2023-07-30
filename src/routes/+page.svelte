@@ -12,6 +12,12 @@
     import {Menu} from "$lib/index.ts";
 
     let scrollPos;
+    let lightsOff = true;
+    onMount(() => {
+        setTimeout(() => {
+            lightsOff = false;
+        }, 500);
+    });
     beforeUpdate(() => {
         scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
     });
@@ -19,14 +25,16 @@
     afterUpdate(() => {
         if (scrollPos) document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
     });
-
 </script>
 <div class="frame">
-    <img class="background" src="./src/imgs/landingbg.png" style="width: 100vw">
+    {#if lightsOff}
+        <img class="background" src="./src/imgs/bg1.png" out:fade style="position:absolute;width: 100vw; z-index: 10">
+    {/if}
+    <img class="background" src="./src/imgs/bg2.png" style="position:absolute;width: 100vw">
 </div>
 
 <Menu includeMainLogo={true}/>
-<div class="textbg frame" style="height: 70vh; margin: 2vh 2vw 0 2vw; border-bottom: 1vh #C9C9C9 solid">
+<div class="textbg frame" style="height: 70vh; margin: 5vh 2vw 0 2vw; border-bottom: 1vh #C9C9C9 solid">
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
@@ -116,6 +124,7 @@
 
     .link {
         color:black;
+        text-decoration: underline;
         text-decoration-color: rgba(255, 39, 0, 1);
     }
 
@@ -241,10 +250,11 @@
     }
 
     .background {
-        filter: brightness(50%);
+        filter: brightness(100%);
     }
 
     .frame {
+        position: relative;
         height: 100vh;
         overflow: hidden;
     }

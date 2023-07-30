@@ -21,15 +21,15 @@
     </div>
 </div>
 
-<div class="halfsize">
+<div class="fullsize">
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p1" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.jpeg" id="p1" transform={true}>
+                <div transition:fade={{duration: 200}} class="textinfo">Alan, an undergraduate studying MechE and Business,
+                    prototyped a multi-rotor aircraft in high school and founded FPV Creator. He has  worked as a drone
+                    operator for Oscar-winning short "Simulacra," and is the first undergraduate involved with the Berkeley
+                    Aviation Innovation Research (AIR) Lab.
                 </div>
             </InfoBox>
         </div>
@@ -37,11 +37,13 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p2" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+            <InfoBox src="./src/imgs/meettheteamimgs/alvinpfp.jpeg" id="p2" transform={true}>
+                <div transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
+                    studying MSE and Business, boasts extensive venture capital experience.
+                    He raised ~$15M for a portfolio company and was selected to help lead
+                    his firm’s most recent investment fund of ~$700M. He's also worked as a PM,
+                    helping Tencent CEO, Ma Huateng, confirm game event development and company
+                    acquisition details.
                 </div>
             </InfoBox>
         </div>
@@ -49,11 +51,12 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p3" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+            <InfoBox src="./src/imgs/meettheteamimgs/haripfp.png" id="p3" transform={true}>
+                <div transition:fade={{duration: 200}} class="textinfo">Hari is a rising sophomore studying BioE
+                    and Business, with an interest for aviation sparked during his NASA internship.
+                    He has researched with Rice University and Johns Hopkins and has worked with several
+                    startups in technical and business roles. In his free time, he enjoys movies, cooking, poker,
+                    and exploring new experiences!
                 </div>
             </InfoBox>
         </div>
@@ -62,20 +65,19 @@
         <div class="titlecontainer">Shasi Pinninti</div>
         <div class="infocontainer">
             <InfoBox src="./src/imgs/meettheteamimgs/shasipfp.jpeg" id="p4" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+                <div transition:fade={{duration: 200}} class="textinfo">Shasi is a MechE and Business double major.
+                    He has worked with aerospace firms such as NASA and Blue Origin, helping to re-define their strategic
+                    roadmaps. He is also well-versed in the field of finance, having been responsible for
+                    risk/growth analytics on a ~$1.7B loan portfolio as well as commodities research for the
+                    Indian conglomerate, Vedanta Group.
                 </div>
             </InfoBox>
         </div>
     </div>
-</div>
-<div class="halfsize" style="padding-top: 0">
     <div class="entrycontainer">
         <div class="titlecontainer">Christine Gu</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p5" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/christinepfp.png" id="p5" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -87,7 +89,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Antonia Dauria</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p6" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/antoniapfp.png" id="p6" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                     ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -136,16 +138,16 @@
 
         position: absolute;
         height: 100%;
-        background-color: rgba(155, 155, 155, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
         text-align: left;
         padding: 5%;
     }
     .titlecontainer {
         color: white;
-        font-size: 20px;
+        font-size: 90%;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 100%;
         letter-spacing: 1.40px;
         word-wrap: break-word;
 
@@ -157,6 +159,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .infocontainer {
         position: relative;
@@ -170,20 +173,22 @@
 
     .entrycontainer {
         height: 60vh;
-        width: 20vw;
+        aspect-ratio: 3/5;
         position: relative;
         margin-left: 4vw;
+        margin-bottom: 1vh;
     }
 
-    .halfsize {
-        height: 60vh;
+    .fullsize {
+        height: auto;
         padding: 10vh 0 10vh 0;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .imgwrapper {
         display: flex;
-        position: absolute;
         justify-content: center;
         overflow: hidden;
     }
@@ -193,9 +198,13 @@
     }
     .bannerimg {
         display: block;
-        float: left;
         padding: 0;
         margin: 0;
+    }
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .title {
         position: absolute;
@@ -207,13 +216,14 @@
         font-size: 15vh;
         font-family: "Unica One", cursive;
         font-weight: 400;
-        line-height: 75px;
+        line-height: 100%;
         letter-spacing: 6.65px;
         word-wrap: break-word;
 
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         background-color: rgba(0, 0, 0, 0.5);
     }

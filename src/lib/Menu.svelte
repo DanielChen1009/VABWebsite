@@ -10,7 +10,7 @@
     import {onMount} from "svelte";
 
     const [send, receive] = crossfade({
-        duration: (d) => Math.sqrt(d * 200),
+        duration: (d) => Math.sqrt(d * 500),
 
         fallback(node, params) {
             const style = getComputedStyle(node);
@@ -75,7 +75,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 25vw;
+        width: 35vh;
         background-color: rgba(0, 0, 0, 0.5);
         height: 100vh;
         z-index: 99;
@@ -88,14 +88,14 @@
     }
 
     .minilogoimg {
-        height: 100%;
+        width: 40%;
         margin-right: 5%;
     }
 
     .minilogotxt {
         position: relative;
+        width: 40%;
         top: -15%;
-        height: 70%;
     }
 
     .minilogo {
@@ -115,26 +115,29 @@
     }
 
     .pagenavbut {
-        width: 25vw;
+        width: 100%;
         height: 9vh;
 
         background-color: transparent;
         border: 0;
         color: white;
+        display: flex;
+        align-items: center;
         text-align: left;
 
         font-size: 3vh;
         font-family: "Kumbh Sans", sans-serif;
         font-weight: 200;
-        line-height: 75px;
+        line-height: 110%;
         letter-spacing: 3px;
 
         padding-left: 2vw;
-        padding-bottom: 2vw;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
     }
 
     .pagenavbut:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
     .dimmer {
@@ -157,14 +160,14 @@
 
     .logoimg {
         position:absolute;
-        top: 11vh;
+        top: 7vh;
         left: 30vw;
         height: 27vh;
     }
 
     .logotxt {
         position:absolute;
-        top: 15vh;
+        top: 11vh;
         left: 45vw;
         height: 20vh;
     }
@@ -172,7 +175,7 @@
     .blurb {
         position:absolute;
         left: 15vw;
-        top: 40vh;
+        top: 80vh;
         width: 70vw;
     }
 </style>

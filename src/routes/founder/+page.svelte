@@ -154,7 +154,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img src="./src/imgs/founderimgs/p1.jpeg" class="timelineimg">
+                    <img src="./src/imgs/founderimgs/p6.png" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
