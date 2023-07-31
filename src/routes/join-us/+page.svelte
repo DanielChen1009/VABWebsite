@@ -12,7 +12,7 @@
         <div class="form">
             <img src="./src/imgs/joinusimgs/formtitle.png" style="width: 60%">
             <img src="./src/imgs/joinusimgs/formsubtitle.png" style="width: 60%; margin-bottom: 5vh;">
-            <form class="inputs">
+            <form class="inputs" method="post">
                 <div style="float:left; width: 60%">
                     <label style="width: 100%">
                         Name*
@@ -111,7 +111,7 @@
                     </label>
                 </div>
                 <div class="submits">
-
+                    <button id="submit" type="submit">
                 </div>
             </form>
         </div>

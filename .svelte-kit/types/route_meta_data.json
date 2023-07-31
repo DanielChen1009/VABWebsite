@@ -1,0 +1,11 @@
+{
+	"/": [],
+	"/founder": [],
+	"/join-us": [
+		"src/routes/join-us/+page.server.js"
+	],
+	"/meet-the-team": [],
+	"/members-partners": [],
+	"/sponsors-clients": [],
+	"/what-we-do": []
+}
