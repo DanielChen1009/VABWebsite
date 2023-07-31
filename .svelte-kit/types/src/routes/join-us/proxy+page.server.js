@@ -1,8 +1,9 @@
+// @ts-nocheck
 import * as db from "$lib/server/database.ts";
-/** @type {import('./$types').Actions} */
+/** */
 
 export const actions = {
-    create: async ({request}) => {
+    create:/** @param {import('./$types').RequestEvent} event */  async ({request}) => {
         const formData = await request.formData();
         let data = {};
         const entryIterator = formData.entries();
