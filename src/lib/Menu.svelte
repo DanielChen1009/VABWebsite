@@ -33,7 +33,6 @@
     {#key visible}
         <img class={"logoimg " + "dimmed"} src="./src/imgs/VABLogo.png">
         <img class={"logotxt " + "dimmed"} src="./src/imgs/logotxt.png">
-        <img class={"blurb " + (visible ? "" : "dimmed")} transition:fade src="./src/imgs/blurb.png">
     {/key}
 {/if}
 

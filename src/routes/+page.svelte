@@ -26,11 +26,18 @@
         if (scrollPos) document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
     });
 </script>
-<div class="frame">
+<div class="frame" style="display: flex; height: 140vh;">
     {#if lightsOff}
-        <img class="background" src="./src/imgs/bg1.png" out:fade style="position:absolute;width: 100vw; z-index: 10">
+        <img class="background" src="./src/imgs/bg1.png" out:fade style="position:absolute;height: 100%; z-index: 10">
     {/if}
-    <img class="background" src="./src/imgs/bg2.png" style="position:absolute;width: 100vw">
+    <img class="background" src="./src/imgs/bg2.png" style="position:absolute;height: 100%">
+    <div class="blurb1">
+        Introducing UC Berkeley’s first and only student-made, human-carrying VTOL aircraft:
+        <span style="font-weight: 400">Sparrow</span>
+    </div>
+    <div class="blurb2">
+        Maiden Voyage 5.1.2024
+    </div>
 </div>
 
 <Menu includeMainLogo={true}/>
@@ -54,7 +61,7 @@
     </div>
     <div class="sponsors">
         <img class="sponsorlogo" src="./src/imgs/met.png" onclick="window.open('https://met.berkeley.edu/', '_blank')">
-        <img class="sponsorlogo" src="./src/imgs/futurex.png" onclick="window.open('https://www.futurexcapital.com/', '_blank')">
+        <img style="height: 25vh" class="sponsorlogo" src="./src/imgs/futurex.png" onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
@@ -65,8 +72,43 @@
 </div>
 
 <style>
+    .blurb2 {
+        position: absolute;
+        top: 125vh;
+        width: 70%;
+        height: 20vh;
+
+        color: #D9D9D9;
+        font-size: 4vh;
+        font-family: "Open Sans", sans-serif;
+        font-style: italic;
+        font-weight: 100;
+        line-height: 100%;
+        letter-spacing: 0.5vh;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .blurb1 {
+        position: absolute;
+        top: 100vh;
+        width: 70%;
+        height: 20vh;
+
+        color: #D9D9D9;
+        font-size: 5vh;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 180%;
+        letter-spacing: 0.94px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
     .sponsorlogo {
+        height: 20vh;
         justify-content: center;
+        cursor: pointer;
+        margin: 3vh
     }
 
     .removebg {
@@ -90,11 +132,13 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         letter-spacing: 3px;
+        cursor: pointer;
     }
 
     .sponsors {
         height: 30vh;
         display: flex;
+        align-items: center;
         padding-left: 2vh;
     }
 
@@ -110,7 +154,7 @@
         color: black;
         font-family: "Unica One", cursive;
         font-weight: 400;
-        line-height: 95px;
+        line-height: 100%;
         letter-spacing: 7px;
         word-wrap: break-word;
         vertical-align: center;
@@ -124,18 +168,9 @@
 
     .link {
         color:black;
+        cursor: pointer;
         text-decoration: underline;
         text-decoration-color: rgba(255, 39, 0, 1);
-    }
-
-    .dimmer {
-        position: fixed;
-        top:0;
-        left:0;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100vw;
-        height: 100vh;
-        z-index: 98;
     }
 
     .text {
@@ -151,112 +186,15 @@
         padding-left: 10vw;
     }
 
-    .centering {
-        position: relative;
-        text-align: center;
-        height: 100%;
-    }
-
-    .minilogoimg {
-        height: 100%;
-        margin-right: 5%;
-    }
-
-    .minilogotxt {
-        position: relative;
-        top: -15%;
-        height: 70%;
-    }
-
-    .minilogo {
-        height: 16.7vh;
-        color:white;
-        margin-bottom: 2vh;
-        padding-bottom: 2vh;
-        border-bottom: 2px solid red;
-    }
-
-    .bolden {
-        font-weight: bolder !important;
-    }
-
-    .pagenavbut {
-        width: 25vw;
-        height: 9vh;
-
-        background-color: transparent;
-        border: 0;
-        color: white;
-        text-align: left;
-
-        font-size: 3vh;
-        font-family: "Kumbh Sans", sans-serif;
-        font-weight: 200;
-        line-height: 75px;
-        letter-spacing: 3px;
-
-        padding-left: 2vw;
-        padding-bottom: 2vw;
-    }
-
-    .pagenavbut:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 25vw;
-        background-color: rgba(0, 0, 0, 0.5);
-        height: 100vh;
-        z-index: 99;
-    }
-
-    .hamburger {
-        position: fixed;
-        top: 1vh;
-        left: 3vw;
-        width: 5vw;
-    }
-
-    .gone {
-        filter: opacity(0%);
-    }
-
-    .dimmed {
-        filter: brightness(50%);
-    }
-
-    .logoimg {
-        position:absolute;
-        top: 11vh;
-        left: 30vw;
-        height: 27vh;
-    }
-
-    .logotxt {
-        position:absolute;
-        top: 15vh;
-        left: 45vw;
-        height: 20vh;
-    }
-
-    .blurb {
-        position:absolute;
-        left: 15vw;
-        top: 40vh;
-        width: 70vw;
-    }
-
     .background {
         filter: brightness(100%);
     }
 
     .frame {
         position: relative;
-        height: 100vh;
+        justify-content: center;
         overflow: hidden;
+        background-color: black;
     }
 
     .textbg {

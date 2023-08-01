@@ -73,46 +73,52 @@
                     </label>
                 </div>
                 <div class="prefcontact">
-                    <div class="txtinp">
+                    <div class="txtinp" style="margin-bottom: 2vh">
                         Preferred Contact
                     </div>
                     <label class="checkwrap" style="width: 100%">
                         <input id="emailcheck" type="checkbox" name="emailcheck" >
                         <span class="checkbutton"></span>
-                        Email Address
+                        <span class="checklabel"> Email Address </span>
                     </label>
                     <label class="checkwrap" style="width: 100%">
                         <input id="textcheck" type="checkbox" name="textcheck">
                         <span class="checkbutton"></span>
-                        Text Message
+                        <span class="checklabel"> Text Message </span>
                     </label>
                     <label class="checkwrap" style="width: 100%">
                         <input id="bothcheck" type="checkbox" name="bothcheck">
                         <span class="checkbutton"></span>
-                        Both
+                        <span class="checklabel"> Both </span>
                     </label>
                 </div>
                 <div class="interests">
-                    <div class="txtinp">
+                    <div class="txtinp" style="margin-bottom: 2vh">
                         Interests
                     </div>
                     <label class="checkwrap" style="width: 100%">
                         <input id="engin" type="checkbox" name="engin" >
                         <span class="checkbutton"></span>
-                        Engineering Teams
+                        <span class="checklabel"> Engineering Teams </span>
                     </label>
                     <label class="checkwrap" style="width: 100%">
                         <input id="business" type="checkbox" name="business">
                         <span class="checkbutton"></span>
-                        Business Teams
+                        <span class="checklabel"> Business Teams </span>
                     </label>
                     <label class="checkwrap" style="width: 100%">
                         <input id="consulting" type="checkbox" name="consulting">
                         <span class="checkbutton"></span>
-                        Consulting Subteam
+                        <span class="checklabel"> Consulting Subteams </span>
                     </label>
                 </div>
                 <div class="submits">
+                    <div style="width: 100%; height: 2vh"></div>
+                    <label class="checkwrap" style="width: 100%; padding-left: 2vh">
+                        <input id="ack" type="checkbox" name="ack" required>
+                        <span class="checkbutton" style="border-radius: 35%"></span>
+                        <span class="checklabel" style="font-size: 1.3vh"> I acknowledge that this form does not guarantee membership </span>
+                    </label>
                     <button class="submitbutton" id="submit" type="submit">
                         Submit Form
                     </button>
@@ -137,12 +143,12 @@
         letter-spacing: 5px;
         word-wrap: break-word;
 
-        margin-top: 10vh;
+        margin-top: 2vh;
         width: 100%;
         height: 5vh;
         color: white;
         background-color: rgba(255, 39, 0, 0.80);
-        border-radius: 1vh;
+        border-radius: 2vh;
         border: none;
         filter: drop-shadow(0 0.25vh 0.25vh rgba(0, 0, 0, 0.5));
     }
@@ -185,13 +191,11 @@
     .checkwrap:hover input ~ .checkbutton {
         background-color: rgba(255, 39, 0, 0.5);
     }
-
     .checkwrap input:active ~ .checkbutton {
-        background-color: #FF2700;
+        background-color: rgba(255, 39, 0, 0.8);
     }
-
     .checkwrap input:checked ~ .checkbutton {
-        background-color: #FF2700;
+        background-color: rgba(255, 39, 0, 0.8);
     }
     .checkbutton {
         position: absolute;
@@ -220,11 +224,23 @@
         flex-wrap: wrap;
         margin-top: 3vh;
     }
+    .checklabel {
+        color: rgba(255, 39, 0, 0.80);
+        font-size: 2vh;
+        font-family: "Unica One", sans-serif;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: 2px;
+        word-wrap: break-word;
+
+        filter: drop-shadow(0 0.25vh 0.25vh rgba(0, 0, 0, 0.5));
+    }
     .submits {
         width: 30%;
         display: flex;
         flex-wrap: wrap;
         margin-top: 3vh;
+        margin-left: 1vh;
     }
     .prefcontact {
         width: 30%;

@@ -209,7 +209,7 @@
     }
     .text {
         color: black;
-        font-size: 3vw;
+        font-size: 4vh;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         line-height: 130%;
@@ -241,13 +241,13 @@
         aspect-ratio: 4/3;
         width: 60vw;
         margin: 5vw;
-        border-radius: 1vw;
+        border-radius: 5vh;
         overflow: hidden;
     }
     .abouttxt {
         position: relative;
         height: auto;
-        padding: 0.1vh 5vw 1vw;
+        padding: 0.1vh 5vw 5vh;
         margin: 0;
         border-bottom: #D9D9D9 1vw solid;
     }

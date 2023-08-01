@@ -172,16 +172,17 @@
     }
 
     .entrycontainer {
-        height: 60vh;
+        height: 53vh;
         aspect-ratio: 3/5;
         position: relative;
-        margin-left: 4vw;
-        margin-bottom: 1vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 2vh;
     }
 
     .fullsize {
         height: auto;
-        padding: 10vh 0 10vh 0;
+        padding: 10vh 5vw 10vh 5vw;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

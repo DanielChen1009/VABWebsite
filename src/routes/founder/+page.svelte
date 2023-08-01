@@ -263,9 +263,10 @@
         font-size: 15vh;
         font-family: "Unica One", cursive;
         font-weight: 400;
-        line-height: 75px;
+        line-height: 100%;
         letter-spacing: 6.65px;
         word-wrap: break-word;
+        text-align: center;
 
         display: flex;
         justify-content: center;
