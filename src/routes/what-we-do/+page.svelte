@@ -67,7 +67,13 @@
                 </div>
             </div>
             <div class="textbox">
-
+                <div class="textinternal">
+                    The software subteam ensures seamless aircraft operations, managing flight control,
+                    autonomy, and mission planning. It offers an intuitive remote piloting and in-flight
+                    piloting interfaces, logs flight telemetry data, manages on-board systems and prioritizes
+                    safety with fail-safe mechanisms. The software subsystem also handles firmware updates and
+                    maintenance are handled for optimal performance.
+                </div>
             </div>
         </div>
         <div class="stentry">
@@ -89,7 +95,13 @@
                 </div>
             </div>
             <div class="textbox">
-
+                <div class="textinternal">
+                    The business and operation subteams drive the club’s success by handling aspects
+                    such as sponsorship, marketing, finance, and social media. They secure sponsorships,
+                    plan marketing strategies, manage budgets, and curate engaging content for the club's
+                    social media platforms like Instagram. By fostering partnerships and optimizing resources,
+                    they ensure the club's growth and stability.
+                </div>
             </div>
         </div>
     </div>
@@ -166,11 +178,26 @@
         overflow: hidden;
         border-radius: 5vh;
     }
+    .textinternal {
+        padding: 3vw;
+
+        color: black;
+        font-size: 1.4vw;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 150%;
+        letter-spacing: 0.90px;
+        word-wrap: break-word
+    }
+
     .textbox {
         width: 60%;
         height: 100%;
         background-color: #D9D9D9;
         border-radius: 5vh;
+
+        display: flex;
+        align-items: center;
     }
     .stentry {
         display: flex;

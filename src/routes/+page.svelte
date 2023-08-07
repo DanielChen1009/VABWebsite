@@ -11,26 +11,23 @@
     import {goto} from "$app/navigation";
     import {Menu} from "$lib/index.ts";
 
-    let scrollPos;
     let lightsOff = true;
     onMount(() => {
+        console.log("Hello")
+        lightsOff = true;
         setTimeout(() => {
             lightsOff = false;
+            console.log("Lights On")
         }, 500);
     });
-    beforeUpdate(() => {
-        scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-    });
 
-    afterUpdate(() => {
-        if (scrollPos) document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
-    });
 </script>
-<div class="frame" style="display: flex; height: 140vh;">
+<div class="frame" style="display: flex; height: 155vh;">
     {#if lightsOff}
-        <img class="background" src="./src/imgs/bg1.png" out:fade style="position:absolute;height: 100%; z-index: 10">
+        <img class="background bgimg" src="./src/imgs/bg1.png" out:fade style="z-index: 4">
+        <div out:fade style="height:100%; width: 100%; z-index: 4; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
     {/if}
-    <img class="background" src="./src/imgs/bg2.png" style="position:absolute;height: 100%">
+    <img class="background bgimg" src="./src/imgs/bg2.png" style="z-index: 0">
     <div class="blurb1">
         Introducing UC Berkeley’s first and only student-made, human-carrying VTOL aircraft:
         <span style="font-weight: 400">Sparrow</span>
@@ -38,6 +35,17 @@
     <div class="blurb2">
         Maiden Voyage 5.1.2024
     </div>
+    <div style="height:100%; width: 100%; z-index: 2; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
+</div>
+<div class="frame" style="display: flex; height: 140vh;">
+    <img class="background" src="./src/imgs/render2.png" out:fade style="position:absolute;height: 100%; z-index: 1">
+    <div class="blurb3">
+        VAB-2438 “Sparrow”
+    </div>
+    <div class="blurb4">
+        8 motors | 2438 mm wheelbase | 42” propeller
+    </div>
+    <div style="height:100%; width: 100%; z-index: 2; position:absolute; background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%)"></div>
 </div>
 
 <Menu includeMainLogo={true}/>
@@ -72,27 +80,69 @@
 </div>
 
 <style>
+    .bgimg {
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        object-fit: none;
+        object-position: 50% 120%;
+    }
+    .blurb4 {
+        position: absolute;
+        top: 20vh;
+        width: 80%;
+        height: 15vh;
+        z-index: 3;
+
+        color: #D9D9D9;
+        font-size: 2.5vw;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 200;
+        line-height: 75px;
+        letter-spacing: 0.60px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+    .blurb3 {
+        position: absolute;
+        top: 8vh;
+        width: 80%;
+        height: 15vh;
+        z-index: 3;
+
+        color: #D9D9D9;
+        font-size: 4vw;
+        font-family: "Unica One", sans-serif;
+        font-weight: 400;
+        line-height: 75px;
+        letter-spacing: 1px;
+        word-wrap: break-word;
+        text-align: center;
+    }
     .blurb2 {
         position: absolute;
-        top: 125vh;
-        width: 70%;
-        height: 20vh;
+        top: 135vh;
+        width: 80%;
+        height: 15vh;
+        z-index: 3;
 
         color: #D9D9D9;
         font-size: 4vh;
         font-family: "Open Sans", sans-serif;
-        font-style: italic;
-        font-weight: 100;
+        font-weight: 200;
         line-height: 100%;
         letter-spacing: 0.5vh;
         word-wrap: break-word;
         text-align: center;
+
+        border-bottom: white 2vh solid;
     }
     .blurb1 {
         position: absolute;
-        top: 100vh;
-        width: 70%;
+        top: 110vh;
+        width: 80%;
         height: 20vh;
+        z-index: 3;
 
         color: #D9D9D9;
         font-size: 5vh;

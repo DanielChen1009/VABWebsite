@@ -25,7 +25,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.jpeg" id="p1" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.jpeg" id="p1" transform={true} top={90}>
                 <div transition:fade={{duration: 200}} class="textinfo">Alan, an undergraduate studying MechE and Business,
                     prototyped a multi-rotor aircraft in high school and founded FPV Creator. He has  worked as a drone
                     operator for Oscar-winning short "Simulacra," and is the first undergraduate involved with the Berkeley
@@ -33,11 +33,11 @@
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Alan !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alvinpfp.jpeg" id="p2" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/alvinpfp.jpeg" id="p2" transform={true} top={100}>
                 <div transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
                     studying MSE and Business, boasts extensive venture capital experience.
                     He raised ~$15M for a portfolio company and was selected to help lead
@@ -47,11 +47,11 @@
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Alvin !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/haripfp.png" id="p3" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/haripfp.jpeg" id="p3" transform={true} top={0}>
                 <div transition:fade={{duration: 200}} class="textinfo">Hari is a rising sophomore studying BioE
                     and Business, with an interest for aviation sparked during his NASA internship.
                     He has researched with Rice University and Johns Hopkins and has worked with several
@@ -60,7 +60,7 @@
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Hari !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Shasi Pinninti</div>
         <div class="infocontainer">
@@ -73,43 +73,45 @@
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Shasi !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Christine Gu</div>
         <div class="infocontainer">
             <InfoBox src="./src/imgs/meettheteamimgs/christinepfp.png" id="p5" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+                <div transition:fade={{duration: 200}} class="textinfo">Christine, an undergraduate in Chemical
+                    Engineering, has seven years of experience in yearbook production. She was once Editor in Chief,
+                    which granted her an extensive repertoire that includes professional photography, sophisticated
+                    graphic design, effective team coordination, and astute production leadership.
+
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Christine !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Antonia Dauria</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/antoniapfp.png" id="p6" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+            <InfoBox src="./src/imgs/meettheteamimgs/antoniapfp.png" id="p6" transform={true} top={20}>
+                <div transition:fade={{duration: 200}} class="textinfo">Antonia is an undergraduate studying Sociology.
+                    She has eight years of leadership experience in collaborative work through management in orchestras
+                    and musical ensemble groups. These experiences gave her a strong suite in public speaking,
+                    English rhetoric, and improvised management. In her free time, she also practices sewing,
+                    makeup artistry, pottery, and baking.
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Antonia !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Daniel Chen</div>
         <div class="infocontainer">
             <InfoBox src="./src/imgs/meettheteamimgs/danielpfp.jpeg" id="p7" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+                <div transition:fade={{duration: 200}} class="textinfo"> Daniel is a EECS and Business double major
+                    that dabbles in all things programming related from ML models to frontend development. Recently, he
+                    has gained in interest in fractional order signal processing, variability quantification through
+                    the analysis of long-range dependence in complex timeseries, and algorithmic trading.
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Daniel !-->
     <div class="entrycontainer">
         <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
@@ -121,7 +123,7 @@
                 </div>
             </InfoBox>
         </div>
-    </div>
+    </div> <!-- Cindy !-->
 </div>
 
 <Menu includeMainLogo={false}/>
@@ -173,7 +175,7 @@
 
     .entrycontainer {
         height: 53vh;
-        aspect-ratio: 3/5;
+        aspect-ratio: 2/3;
         position: relative;
         margin-left: 1vw;
         margin-right: 1vw;

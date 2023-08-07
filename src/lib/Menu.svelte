@@ -63,8 +63,8 @@
         <button class="pagenavbut" on:click={() => {goto("/founder");}}>Founder's Story</button>
         <button class="pagenavbut" on:click={() => {goto("/what-we-do");}}>What We Do</button>
         <button class="pagenavbut" on:click={() => {goto("/meet-the-team");}}>Meet the Team</button>
-        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>
-        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>
+<!--        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>-->
+<!--        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>-->
         <button class="pagenavbut" on:click={() => {goto("/join-us"); visible = true}}>Join Us!</button>
     </div>
 {/if}
@@ -159,16 +159,18 @@
 
     .logoimg {
         position:absolute;
-        top: 7vh;
-        left: 30vw;
-        height: 27vh;
+        top: 2.5vw;
+        left: 34vw;
+        height: 14vw;
+        z-index: 3;
     }
 
     .logotxt {
         position:absolute;
-        top: 11vh;
-        left: 45vw;
-        height: 20vh;
+        top: 5vw;
+        left: 48vw;
+        height: 10vw;
+        z-index: 3;
     }
 
     .blurb {

@@ -11,6 +11,7 @@
     export let transform;
     export let src;
     export let id;
+    export let top = 50;
 </script>
 
 <div on:mouseenter={() => {hovered = true; console.log("MOUSE ENTERED")}} on:mouseleave={() => {hovered = false;}} role='presentation'>
@@ -19,7 +20,8 @@
         transform: translateX(-50%) ;
         height: 100%;
         object-fit: cover;
-        width: 100%;">
+        width: 100%;
+        object-position: 50% {top}%">
     {#if hovered}
         <slot/>
     {/if}
