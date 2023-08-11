@@ -1,4 +1,5 @@
 <script>
+    import { page } from '$app/stores'
 </script>
 
 <header>
@@ -9,9 +10,12 @@
     <slot />
 </main>
 
-<footer class="extrainfo">
 
-</footer>
+{#if !$page.url.pathname.toString().includes("/admin")}
+    <footer class="extrainfo">
+
+    </footer>
+{/if}
 
 <style>
     .extrainfo {

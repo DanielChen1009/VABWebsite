@@ -315,4 +315,11 @@
 
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    :global(body) {
+        padding:0;
+        margin:0;
+        overscroll-behavior-y: none;
+        overscroll-behavior-x: none;
+    }
 </style>

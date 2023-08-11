@@ -1,5 +1,11 @@
 {
 	"/": [],
+	"/admin": [
+		"src/routes/admin/+page.server.js"
+	],
+	"/admin/login": [
+		"src/routes/admin/login/+page.server.js"
+	],
 	"/founder": [],
 	"/join-us": [
 		"src/routes/join-us/+page.server.js"

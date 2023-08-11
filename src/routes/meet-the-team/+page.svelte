@@ -82,7 +82,6 @@
                     Engineering, has seven years of experience in yearbook production. She was once Editor in Chief,
                     which granted her an extensive repertoire that includes professional photography, sophisticated
                     graphic design, effective team coordination, and astute production leadership.
-
                 </div>
             </InfoBox>
         </div>
@@ -116,10 +115,9 @@
         <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
             <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p8" transform={true}>
-                <div transition:fade={{duration: 200}} class="textinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute
+                <div transition:fade={{duration: 200}} class="textinfo">Cindy is an undergraduate studying Mech E and
+                    business. Her experiences spans across robotics/automation, manufacturing, and aeronautical
+                    engineering.
                 </div>
             </InfoBox>
         </div>
@@ -229,5 +227,11 @@
         text-align: center;
 
         background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    :global(body) {
+        padding:0;
+        margin:0;
+        overscroll-behavior-y: none;
     }
 </style>

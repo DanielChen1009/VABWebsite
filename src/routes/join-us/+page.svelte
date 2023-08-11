@@ -10,9 +10,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="">
-        <img class="bannerimg" src="">
-        <img class="bannerimg" src="">
+        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
     </div>
     <div class="title bannersize">
         Join Us!
@@ -339,5 +339,11 @@
         margin: 2vw;
         justify-content: center;
         align-content: center;
+    }
+
+    :global(body) {
+        padding:0;
+        margin:0;
+        overscroll-behavior-y: none;
     }
 </style>
