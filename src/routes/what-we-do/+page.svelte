@@ -28,9 +28,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
-        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
-        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
     </div>
     <div class="title bannersize">
         About the Club
@@ -50,7 +50,7 @@
     <div class="stcontainer center color">
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/whatwedoimgs/hardware.png">
+                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/hardware.png">
                 <div class="labelbox">
                     Hardware
                 </div>
@@ -61,7 +61,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/whatwedoimgs/software.png">
+                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/software.png">
                 <div class="labelbox">
                     Software
                 </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/whatwedoimgs/consulting.png">
+                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/consulting.png">
                 <div class="labelbox">
                     Consulting
                 </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/whatwedoimgs/marketing.png">
+                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/marketing.png">
                 <div class="labelbox">
                     Marketing
                 </div>
@@ -106,7 +106,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/whatwedoimgs/sponsorr.png">
+                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/sponsorr.png">
                 <div class="labelbox">
                     Sponsor Relations
                 </div>
@@ -127,7 +127,7 @@
 {#if isMobile}
     <div class="stcontainer center color">
             <div class="st">
-                <InfoBox src="./src/imgs/whatwedoimgs/hardware.png" id="tag1" transform={false}>
+                <InfoBox src="./src/lib/imgs/whatwedoimgs/hardware.png" id="tag1" transform={false}>
                     <div class="internaltxt" transition:fade>
                         Hardware
                     </div>
@@ -135,7 +135,7 @@
             </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/whatwedoimgs/software.png" id="tag2" transform={false}>
+            <InfoBox src="./src/lib/imgs/whatwedoimgs/software.png" id="tag2" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Software
                 </div>

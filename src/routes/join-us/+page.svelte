@@ -10,9 +10,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
-        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
-        <img class="bannerimg" src="./src/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
     </div>
     <div class="title bannersize">
         Join Us!
@@ -21,8 +21,8 @@
 <div class="fullsize">
     <div class="border">
         <div class="form">
-            <img src="./src/imgs/joinusimgs/formtitle.png" style="width: 60%">
-            <img src="./src/imgs/joinusimgs/formsubtitle.png" style="width: 60%; margin-bottom: 5vh;">
+            <img src="./src/lib/imgs/joinusimgs/formtitle.png" style="width: 60%">
+            <img src="./src/lib/imgs/joinusimgs/formsubtitle.png" style="width: 60%; margin-bottom: 5vh;">
             <form class="inputs" method="POST" action="?/create">
                 <div style="float:left; width: 60%">
                     <label style="width: 100%">
@@ -126,7 +126,7 @@
             </form>
         </div>
         <div class="campanilewrapper">
-            <img src="./src/imgs/joinusimgs/campanile.png" class="img">
+            <img src="./src/lib/imgs/joinusimgs/campanile.png" class="img">
         </div>
         <div class="boxtitle">Recruitment Form</div>
     </div>

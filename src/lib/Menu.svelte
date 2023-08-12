@@ -31,20 +31,20 @@
 </script>
 {#if includeMainLogo}
     {#key visible}
-        <img class={"logoimg " + "dimmed"} src="./src/imgs/VABLogo.png">
-        <img class={"logotxt " + "dimmed"} src="./src/imgs/logotxt.png">
+        <img class={"logoimg " + "dimmed"} src="./src/lib/imgs/VABLogo.png">
+        <img class={"logotxt " + "dimmed"} src="./src/lib/imgs/logotxt.png">
     {/key}
 {/if}
 
 {#if visible}
-    <img class="hamburger" transition:fade={{duration: 100}} src="./src/imgs/hamburger.png" on:click={() => {
+    <img class="hamburger" transition:fade={{duration: 100}} src="./src/lib/imgs/hamburger.png" on:click={() => {
             visible=false;
         }}>
 {/if}
 {#if includeMainLogo}
     {#if visible}
-        <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
-        <img class="logoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/imgs/VABLogo.png">
+        <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/lib/imgs/logotxt.png">
+        <img class="logoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/lib/imgs/VABLogo.png">
     {/if}
 {/if}
 {#if !visible}
@@ -53,10 +53,10 @@
     <div id="menu" transition:fly={{duration:500, x: -300}} class="menu">
         <div id="logos" class="minilogo">
             <div class="centering">
-                <img class="minilogoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/imgs/VABLogo.png" on:click={() => {
+                <img class="minilogoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/lib/imgs/VABLogo.png" on:click={() => {
                 visible=true
             }}>
-                <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/imgs/logotxt.png">
+                <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/lib/imgs/logotxt.png">
             </div>
         </div>
         <button class="pagenavbut bolden" on:click={() => {goto("/");}}>Home</button>

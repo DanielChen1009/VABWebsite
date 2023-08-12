@@ -12,9 +12,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="src/imgs/meettheteamimgs/banner.png">
-        <img class="bannerimg" src="src/imgs/meettheteamimgs/banner.png">
-        <img class="bannerimg" src="src/imgs/meettheteamimgs/banner.png">
+        <img class="bannerimg" src="./src/lib/imgs/meettheteamimgs/banner.png">
+        <img class="bannerimg" src="./src/lib/imgs/meettheteamimgs/banner.png">
+        <img class="bannerimg" src="./src/lib/imgs/meettheteamimgs/banner.png">
     </div>
     <div class="title bannersize">
         Meet Our Leadership
@@ -25,7 +25,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.jpeg" id="p1" transform={true} top={90}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/alanpfp.jpeg" id="p1" transform={true} top={90}>
                 <div transition:fade={{duration: 200}} class="textinfo">Alan, an undergraduate studying MechE and Business,
                     prototyped a multi-rotor aircraft in high school and founded FPV Creator. He has  worked as a drone
                     operator for Oscar-winning short "Simulacra," and is the first undergraduate involved with the Berkeley
@@ -37,7 +37,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alvinpfp.jpeg" id="p2" transform={true} top={100}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/alvinpfp.jpeg" id="p2" transform={true} top={100}>
                 <div transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
                     studying MSE and Business, boasts extensive venture capital experience.
                     He raised ~$15M for a portfolio company and was selected to help lead
@@ -51,7 +51,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/haripfp.jpeg" id="p3" transform={true} top={0}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/haripfp.jpeg" id="p3" transform={true} top={0}>
                 <div transition:fade={{duration: 200}} class="textinfo">Hari is a rising sophomore studying BioE
                     and Business, with an interest for aviation sparked during his NASA internship.
                     He has researched with Rice University and Johns Hopkins and has worked with several
@@ -64,7 +64,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Shasi Pinninti</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/shasipfp.jpeg" id="p4" transform={true}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/shasipfp.jpeg" id="p4" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Shasi is a MechE and Business double major.
                     He has worked with aerospace firms such as NASA and Blue Origin, helping to re-define their strategic
                     roadmaps. He is also well-versed in the field of finance, having been responsible for
@@ -77,7 +77,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Christine Gu</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/christinepfp.png" id="p5" transform={true}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/christinepfp.png" id="p5" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Christine, an undergraduate in Chemical
                     Engineering, has seven years of experience in yearbook production. She was once Editor in Chief,
                     which granted her an extensive repertoire that includes professional photography, sophisticated
@@ -89,7 +89,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Antonia Dauria</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/antoniapfp.png" id="p6" transform={true} top={20}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/antoniapfp.png" id="p6" transform={true} top={20}>
                 <div transition:fade={{duration: 200}} class="textinfo">Antonia is an undergraduate studying Sociology.
                     She has eight years of leadership experience in collaborative work through management in orchestras
                     and musical ensemble groups. These experiences gave her a strong suite in public speaking,
@@ -102,7 +102,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Daniel Chen</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/danielpfp.jpeg" id="p7" transform={true}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/danielpfp.jpeg" id="p7" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo"> Daniel is a EECS and Business double major
                     that dabbles in all things programming related from ML models to frontend development. Recently, he
                     has gained in interest in fractional order signal processing, variability quantification through
@@ -114,7 +114,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/cindypfp.png" id="p8" transform={true}>
+            <InfoBox src="./src/lib/imgs/meettheteamimgs/cindypfp.png" id="p8" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Cindy is an undergraduate studying Mech E and
                     business. Her experiences spans across robotics/automation, manufacturing, and aeronautical
                     engineering.

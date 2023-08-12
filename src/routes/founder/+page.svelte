@@ -28,15 +28,15 @@
 {#if mounted}
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/imgs/founderimgs/founderimgright.png">
-        <img class="bannerimg" src="./src/imgs/founderimgs/founderimgleft.png">
-        <img class="bannerimg" src="./src/imgs/founderimgs/founderimgcenter.png">
-        <img class="bannerimg" src="./src/imgs/founderimgs/founderimgright.png">
-        <img class="bannerimg" src="./src/imgs/founderimgs/founderimgleft.png">
+        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgright.png">
+        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgleft.png">
+        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgcenter.png">
+        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgright.png">
+        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgleft.png">
     </div>
     <div class="title bannersize">
         FOUNDER'S STORY
-        <img class="circle top center" src="./src/imgs/founderimgs/circle.svg">
+        <img class="circle top center" src="./src/lib/imgs/founderimgs/circle.svg">
     </div>
 </div>
 <div class="timelinewrapper">
@@ -60,7 +60,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/imgs/founderimgs/p1.jpeg" class="timelineimg">
+                    <img src="./src/lib/imgs/founderimgs/p1.jpeg" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -79,7 +79,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img src="./src/imgs/founderimgs/p2.png" class="timelineimg">
+                    <img src="./src/lib/imgs/founderimgs/p2.png" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -97,7 +97,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/imgs/founderimgs/p3.png" class="timelineimg">
+                    <img src="./src/lib/imgs/founderimgs/p3.png" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -133,7 +133,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/imgs/founderimgs/p5.png" class="timelineimg">
+                    <img src="./src/lib/imgs/founderimgs/p5.png" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -154,7 +154,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img src="./src/imgs/founderimgs/p6.png" class="timelineimg">
+                    <img src="./src/lib/imgs/founderimgs/p6.png" class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
