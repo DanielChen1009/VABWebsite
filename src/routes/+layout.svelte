@@ -12,14 +12,14 @@
 
 
 {#if !$page.url.pathname.toString().includes("/admin")}
-    <footer class="extrainfo">
+<!--    <footer class="extrainfo">-->
 
-    </footer>
+<!--    </footer>-->
 {/if}
 
 <style>
     .extrainfo {
-        width: 100vw;
+        width: 99vw;
         height: 30vh;
         background-color: rgba(0, 0, 0, 0.8);
     }

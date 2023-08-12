@@ -28,9 +28,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="">
-        <img class="bannerimg" src="">
-        <img class="bannerimg" src="">
+        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src="./src/imgs/whatwedoimgs/bannerbg.png">
     </div>
     <div class="title bannersize">
         About the Club
@@ -50,7 +50,7 @@
     <div class="stcontainer center color">
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/landingbg.png">
+                <img class="stimage" src="src/imgs/whatwedoimgs/hardware.png">
                 <div class="labelbox">
                     Hardware
                 </div>
@@ -61,7 +61,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/landingbg.png">
+                <img class="stimage" src="src/imgs/whatwedoimgs/software.png">
                 <div class="labelbox">
                     Software
                 </div>
@@ -78,7 +78,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/landingbg.png">
+                <img class="stimage" src="src/imgs/whatwedoimgs/consulting.png">
                 <div class="labelbox">
                     Consulting
                 </div>
@@ -89,9 +89,26 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="src/imgs/landingbg.png">
+                <img class="stimage" src="src/imgs/whatwedoimgs/marketing.png">
                 <div class="labelbox">
-                    Business/Ops
+                    Marketing
+                </div>
+            </div>
+            <div class="textbox">
+                <div class="textinternal">
+                    The business and operation subteams drive the club’s success by handling aspects
+                    such as sponsorship, marketing, finance, and social media. They secure sponsorships,
+                    plan marketing strategies, manage budgets, and curate engaging content for the club's
+                    social media platforms like Instagram. By fostering partnerships and optimizing resources,
+                    they ensure the club's growth and stability.
+                </div>
+            </div>
+        </div>
+        <div class="stentry">
+            <div class="imgbox">
+                <img class="stimage" src="src/imgs/whatwedoimgs/sponsorr.png">
+                <div class="labelbox">
+                    Sponsor Relations
                 </div>
             </div>
             <div class="textbox">
@@ -110,7 +127,7 @@
 {#if isMobile}
     <div class="stcontainer center color">
             <div class="st">
-                <InfoBox src="./src/imgs/landingbg.png" id="tag1" transform={false}>
+                <InfoBox src="./src/imgs/whatwedoimgs/hardware.png" id="tag1" transform={false}>
                     <div class="internaltxt" transition:fade>
                         Hardware
                     </div>
@@ -118,7 +135,7 @@
             </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/landingbg.png" id="tag2" transform={false}>
+            <InfoBox src="./src/imgs/whatwedoimgs/software.png" id="tag2" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Software
                 </div>
@@ -126,17 +143,24 @@
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/landingbg.png" id="tag3" transform={false}>
+            <InfoBox src="./src/imgs/whatwedoimgs/consulting.png" id="tag3" transform={false}>
                 <div class="internaltxt" transition:fade>
-                    Consulting / Business Dev
+                    Consulting
+                </div>
+            </InfoBox>
+        </div>
+        <div class="st">
+            <InfoBox src="./src/imgs/whatwedoimgs/marketing.png" id="tag4" transform={false}>
+                <div class="internaltxt" transition:fade>
+                    Marketing
                 </div>
             </InfoBox>
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/landingbg.png" id="tag4" transform={false}>
+            <InfoBox src="./src/imgs/whatwedoimgs/sponsorr.png" id="tag5" transform={false}>
                 <div class="internaltxt" transition:fade>
-                    Other Roles
+                    Sponsor Relations
                 </div>
             </InfoBox>
         </div>
@@ -236,7 +260,7 @@
     }
     .text {
         color: black;
-        font-size: 4vh;
+        font-size: 3vh;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
         line-height: 130%;

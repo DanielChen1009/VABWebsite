@@ -114,7 +114,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Cindy Huang</div>
         <div class="infocontainer">
-            <InfoBox src="./src/imgs/meettheteamimgs/alanpfp.png" id="p8" transform={true}>
+            <InfoBox src="./src/imgs/meettheteamimgs/cindypfp.png" id="p8" transform={true}>
                 <div transition:fade={{duration: 200}} class="textinfo">Cindy is an undergraduate studying Mech E and
                     business. Her experiences spans across robotics/automation, manufacturing, and aeronautical
                     engineering.
