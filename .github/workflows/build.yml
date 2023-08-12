@@ -23,4 +23,4 @@ jobs:
           server: https://vtolatberkeley.org
           app: 'VABWebsite'
           token: '${{ secrets.APP_TOKEN }}'
-          image: 'ghcr.io/danielchen1009/VABWebsite:latest'
+          image: 'ghcr.io/DanielChen1009/VABWebsite:latest'
