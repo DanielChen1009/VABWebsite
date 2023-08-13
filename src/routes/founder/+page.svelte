@@ -7,6 +7,17 @@
     import {onMount} from "svelte";
     import EntryContainer from "./EntryContainer.svelte";
     import Menu from "../../lib/Menu.svelte";
+    import founderimgright from "$lib/imgs/founderimgs/founderimgright.png";
+    import founderimgleft from "$lib/imgs/founderimgs/founderimgleft.png";
+    import founderimgcenter from "$lib/imgs/founderimgs/founderimgcenter.png";
+    import p1 from "$lib/imgs/founderimgs/p1.jpeg";
+    import p2 from "$lib/imgs/founderimgs/p2.png";
+    import p3 from "$lib/imgs/founderimgs/p3.png";
+    import p5 from "$lib/imgs/founderimgs/p5.png";
+    import p6 from "$lib/imgs/founderimgs/p6.png";
+    import circle from "$lib/imgs/founderimgs/circle.svg";
+
+
     let h1 = 0, h2 = 0, h3 = 0, h4 = 0, h5 = 0, h6 = 0;
     let clientHeight;
     let mounted;
@@ -28,15 +39,15 @@
 {#if mounted}
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgright.png">
-        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgleft.png">
-        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgcenter.png">
-        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgright.png">
-        <img class="bannerimg" src="./src/lib/imgs/founderimgs/founderimgleft.png">
+        <img class="bannerimg" src={founderimgright}>
+        <img class="bannerimg" src={founderimgleft}>
+        <img class="bannerimg" src={founderimgcenter}>
+        <img class="bannerimg" src={founderimgright}>
+        <img class="bannerimg" src={founderimgleft}>
     </div>
     <div class="title bannersize">
         FOUNDER'S STORY
-        <img class="circle top center" src="./src/lib/imgs/founderimgs/circle.svg">
+        <img class="circle top center" src={circle}>
     </div>
 </div>
 <div class="timelinewrapper">
@@ -60,7 +71,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/lib/imgs/founderimgs/p1.jpeg" class="timelineimg">
+                    <img src={p1} class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -79,7 +90,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img src="./src/lib/imgs/founderimgs/p2.png" class="timelineimg">
+                    <img src={p2} class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -97,7 +108,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/lib/imgs/founderimgs/p3.png" class="timelineimg">
+                    <img src={p3} class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -133,7 +144,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: right">
                 <div class="timeimgwrapper" style="justify-content: right;">
-                    <img src="./src/lib/imgs/founderimgs/p5.png" class="timelineimg">
+                    <img src={p5} class="timelineimg">
                 </div>
             </div>
         </EntryContainer>
@@ -154,7 +165,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img src="./src/lib/imgs/founderimgs/p6.png" class="timelineimg">
+                    <img src={p6} class="timelineimg">
                 </div>
             </div>
         </EntryContainer>

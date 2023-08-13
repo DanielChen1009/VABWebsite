@@ -5,10 +5,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 <script>
-    import Menu from "../../lib/Menu.svelte";
-    import InfoBox from "../../lib/InfoBox.svelte";
+    import Menu from "$lib/Menu.svelte";
+    import InfoBox from "$lib/InfoBox.svelte";
     import {fade} from "svelte/transition";
     import {onMount} from "svelte";
+    import bannerbg from "$lib/imgs/whatwedoimgs/bannerbg.png";
+    import consulting from "$lib/imgs/whatwedoimgs/consulting.png";
+    import hardware from "$lib/imgs/whatwedoimgs/hardware.png";
+    import marketing from "$lib/imgs/whatwedoimgs/marketing.png";
+    import software from "$lib/imgs/whatwedoimgs/software.png";
+    import sponsorr from "$lib/imgs/whatwedoimgs/sponsorr.png";
 
     function myFunction(x) {
         if (x.matches) { // If media query matches
@@ -28,9 +34,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
-        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
-        <img class="bannerimg" src="./src/lib/imgs/whatwedoimgs/bannerbg.png">
+        <img class="bannerimg" src={bannerbg}>
+        <img class="bannerimg" src={bannerbg}>
+        <img class="bannerimg" src={bannerbg}>
     </div>
     <div class="title bannersize">
         About the Club
@@ -50,7 +56,7 @@
     <div class="stcontainer center color">
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/hardware.png">
+                <img class="stimage" src={hardware}>
                 <div class="labelbox">
                     Hardware
                 </div>
@@ -61,7 +67,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/software.png">
+                <img class="stimage" src={software}>
                 <div class="labelbox">
                     Software
                 </div>
@@ -78,7 +84,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/consulting.png">
+                <img class="stimage" src={consulting}>
                 <div class="labelbox">
                     Consulting
                 </div>
@@ -89,7 +95,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/marketing.png">
+                <img class="stimage" src={marketing}>
                 <div class="labelbox">
                     Marketing
                 </div>
@@ -106,7 +112,7 @@
         </div>
         <div class="stentry">
             <div class="imgbox">
-                <img class="stimage" src="./src/lib/imgs/whatwedoimgs/sponsorr.png">
+                <img class="stimage" src={sponsorr}>
                 <div class="labelbox">
                     Sponsor Relations
                 </div>
@@ -127,7 +133,7 @@
 {#if isMobile}
     <div class="stcontainer center color">
             <div class="st">
-                <InfoBox src="./src/lib/imgs/whatwedoimgs/hardware.png" id="tag1" transform={false}>
+                <InfoBox src={hardware} id="tag1" transform={false}>
                     <div class="internaltxt" transition:fade>
                         Hardware
                     </div>
@@ -135,7 +141,7 @@
             </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/lib/imgs/whatwedoimgs/software.png" id="tag2" transform={false}>
+            <InfoBox src={software} id="tag2" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Software
                 </div>
@@ -143,14 +149,14 @@
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/whatwedoimgs/consulting.png" id="tag3" transform={false}>
+            <InfoBox src={consulting} id="tag3" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Consulting
                 </div>
             </InfoBox>
         </div>
         <div class="st">
-            <InfoBox src="./src/imgs/whatwedoimgs/marketing.png" id="tag4" transform={false}>
+            <InfoBox src={marketing} id="tag4" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Marketing
                 </div>
@@ -158,7 +164,7 @@
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
-            <InfoBox src="./src/imgs/whatwedoimgs/sponsorr.png" id="tag5" transform={false}>
+            <InfoBox src={sponsorr} id="tag5" transform={false}>
                 <div class="internaltxt" transition:fade>
                     Sponsor Relations
                 </div>

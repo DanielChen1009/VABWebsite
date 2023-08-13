@@ -10,6 +10,13 @@
     import { onMount } from 'svelte';
     import {goto} from "$app/navigation";
     import {Menu} from "$lib/index.ts";
+    import bg1 from "$lib/imgs/bg1.png";
+    import bg2 from "$lib/imgs/bg2.png";
+    import ButtonArrow from "$lib/imgs/ButtonArrow.png";
+    import futurex from "$lib/imgs/futurex.png";
+    import met from "$lib/imgs/met.png";
+    import render2 from "$lib/imgs/render2.png";
+
 
     let lightsOff = true;
     onMount(() => {
@@ -24,10 +31,10 @@
 </script>
 <div class="frame" style="display: flex; height: 155vh;">
     {#if lightsOff}
-        <img class="background bgimg" src="./src/lib/imgs/bg1.png" out:fade style="z-index: 4">
+        <img class="background bgimg" src={bg1} out:fade style="z-index: 4">
         <div out:fade style="height:100%; width: 100%; z-index: 4; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
     {/if}
-    <img class="background bgimg" src="./src/lib/imgs/bg2.png" style="z-index: 0">
+    <img class="background bgimg" src={bg2} style="z-index: 0">
     <div class="blurb1">
         Introducing UC Berkeley’s first and only student-made, human-carrying VTOL aircraft:
         <span style="font-weight: 400">Sparrow</span>
@@ -38,7 +45,7 @@
     <div style="height:100%; width: 100%; z-index: 2; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
 </div>
 <div class="frame" style="display: flex; height: 140vh;">
-    <img class="background" src="./src/lib/imgs/render2.png" out:fade style="position:absolute;height: 100%; z-index: 1">
+    <img class="background" src={render2} out:fade style="position:absolute;height: 100%; z-index: 1">
     <div class="blurb3">
         VAB-2438 “Sparrow”
     </div>
@@ -58,7 +65,7 @@
     <div class="buttondiv removebg">
         <button class="linkbutton" on:click={() => {goto("/join-us")}}>
             Become a Member
-            <img src="./src/lib/imgs/ButtonArrow.png">
+            <img src={ButtonArrow}>
         </button>
     </div>
 </div>
@@ -68,13 +75,13 @@
         <div class="titletxt">Partners & Clients</div>
     </div>
     <div class="sponsors">
-        <img class="sponsorlogo" src="./src/lib/imgs/met.png" onclick="window.open('https://met.berkeley.edu/', '_blank')">
-        <img style="height: 25vh" class="sponsorlogo" src="./src/lib/imgs/futurex.png" onclick="window.open('https://www.futurexcapital.com/', '_blank')">
+        <img class="sponsorlogo" src={met} onclick="window.open('https://met.berkeley.edu/', '_blank')">
+        <img style="height: 25vh" class="sponsorlogo" src={futurex} onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
             Become a Partner
-            <img src="./src/lib/imgs/ButtonArrow.png">
+            <img src={ButtonArrow}>
         </button>
     </div>
 </div>

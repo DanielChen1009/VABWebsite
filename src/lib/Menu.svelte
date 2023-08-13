@@ -9,6 +9,12 @@
     import {goto} from "$app/navigation";
     import {onMount} from "svelte";
 
+    import blurb from "$lib/imgs/blurb.png";
+    import hamburger from "$lib/imgs/hamburger.png";
+    import landingbg from "$lib/imgs/landingbg.png";
+    import logotxt from "$lib/imgs/logotxt.png";
+    import VABLogo from "$lib/imgs/VABLogo.png";
+
     const [send, receive] = crossfade({
         duration: (d) => Math.sqrt(d * 500),
 
@@ -31,20 +37,20 @@
 </script>
 {#if includeMainLogo}
     {#key visible}
-        <img class={"logoimg " + "dimmed"} src="./src/lib/imgs/VABLogo.png">
-        <img class={"logotxt " + "dimmed"} src="./src/lib/imgs/logotxt.png">
+        <img class={"logoimg " + "dimmed"} src={VABLogo}>
+        <img class={"logotxt " + "dimmed"} src={logotxt}>
     {/key}
 {/if}
 
 {#if visible}
-    <img class="hamburger" transition:fade={{duration: 100}} src="./src/lib/imgs/hamburger.png" on:click={() => {
+    <img class="hamburger" transition:fade={{duration: 100}} src={hamburger} on:click={() => {
             visible=false;
         }}>
 {/if}
 {#if includeMainLogo}
     {#if visible}
-        <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/lib/imgs/logotxt.png">
-        <img class="logoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/lib/imgs/VABLogo.png">
+        <img class="logotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src={logotxt}>
+        <img class="logoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src={VABLogo}>
     {/if}
 {/if}
 {#if !visible}
@@ -53,10 +59,10 @@
     <div id="menu" transition:fly={{duration:500, x: -300}} class="menu">
         <div id="logos" class="minilogo">
             <div class="centering">
-                <img class="minilogoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src="./src/lib/imgs/VABLogo.png" on:click={() => {
+                <img class="minilogoimg" in:receive={{key: "logo"}} out:send={{key: "logo"}} src={VABLogo} on:click={() => {
                 visible=true
             }}>
-                <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src="./src/lib/imgs/logotxt.png">
+                <img class="minilogotxt" in:receive={{key: "txt"}} out:send={{key: "txt"}} src={logotxt}>
             </div>
         </div>
         <button class="pagenavbut bolden" on:click={() => {goto("/");}}>Home</button>

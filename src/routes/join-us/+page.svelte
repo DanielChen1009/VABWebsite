@@ -1,5 +1,9 @@
 <script>
     import Menu from "../../lib/Menu.svelte";
+    import campanile from "$lib/imgs/joinusimgs/campanile.png"
+    import formsubtitle from "$lib/imgs/joinusimgs/formsubtitle.png"
+    import formtitle from "$lib/imgs/joinusimgs/formtitle.png"
+    import joinusbanner from "$lib/imgs/joinusimgs/joinusbanner.png"
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,9 +14,9 @@
 
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
-        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
-        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
-        <img class="bannerimg" src="./src/lib/imgs/joinusimgs/joinusbanner.png">
+        <img class="bannerimg" src={joinusbanner}>
+        <img class="bannerimg" src={joinusbanner}>
+        <img class="bannerimg" src={joinusbanner}>
     </div>
     <div class="title bannersize">
         Join Us!
@@ -21,8 +25,8 @@
 <div class="fullsize">
     <div class="border">
         <div class="form">
-            <img src="./src/lib/imgs/joinusimgs/formtitle.png" style="width: 60%">
-            <img src="./src/lib/imgs/joinusimgs/formsubtitle.png" style="width: 60%; margin-bottom: 5vh;">
+            <img src={formtitle} style="width: 60%">
+            <img src={formsubtitle} style="width: 60%; margin-bottom: 5vh;">
             <form class="inputs" method="POST" action="?/create">
                 <div style="float:left; width: 60%">
                     <label style="width: 100%">
@@ -126,7 +130,7 @@
             </form>
         </div>
         <div class="campanilewrapper">
-            <img src="./src/lib/imgs/joinusimgs/campanile.png" class="img">
+            <img src={campanile} class="img">
         </div>
         <div class="boxtitle">Recruitment Form</div>
     </div>
