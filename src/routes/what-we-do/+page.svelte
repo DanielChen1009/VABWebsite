@@ -62,10 +62,12 @@
                 </div>
             </div>
             <div class="textbox">
-                The Hardware team delves into the intricacies of aircraft design, spanning mechanical,
-                thermal, and aeronautical domains. Team members will hone skills in research, design,
-                CAD modeling, construction, and testing of the airframe, propulsion, and electrical subsystems.
-                Ideal candidates are from majors like MechE, AeroE, MSE, EECS, and other engineering disciplines.
+                <div class="textinternal">
+                    The Hardware team delves into the intricacies of aircraft design, spanning mechanical,
+                    thermal, and aeronautical domains. Team members will hone skills in research, design,
+                    CAD modeling, construction, and testing of the airframe, propulsion, and electrical subsystems.
+                    Ideal candidates are from majors like MechE, AeroE, MSE, EECS, and other engineering disciplines.
+                </div>
             </div>
         </div>
         <div class="stentry">
@@ -92,10 +94,12 @@
                 </div>
             </div>
             <div class="textbox">
-                Drawing upon the collective expertise of VTOL at Berkeley, the Consulting team
-                offers services to pioneering companies in the mobility sector. Team members will refine
-                their skills in professional research, business analysis, and impactful presentation.
-                Business Administration majors are especially suited for this subteam.
+                <div class="textinternal">
+                    Drawing upon the collective expertise of VTOL at Berkeley, the Consulting team
+                    offers services to pioneering companies in the mobility sector. Team members will refine
+                    their skills in professional research, business analysis, and impactful presentation.
+                    Business Administration majors are especially suited for this subteam.
+                </div>
             </div>
         </div>
         <div class="stentry">
@@ -111,7 +115,6 @@
                     content, from flyers and posters to social media interactions. Team members
                     will create photos, videos, and graphics to amplify the club's public engagement.
                     We welcome individuals with professional experience in related fields.
-
                 </div>
             </div>
         </div>
