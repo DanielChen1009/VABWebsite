@@ -22,5 +22,5 @@ jobs:
         with:
           server: https://vtolatberkeley.org
           app: 'VABWebsite'
-          token: 'bddb4c1380ea5b4a3f2df95dd95957725f573f9ee3b3e859c7f71fdd779a5024'
+          token: '${{ secrets.APP_TOKEN }}$'
           image: 'ghcr.io/DanielChen1009/VABWebsite:latest'
