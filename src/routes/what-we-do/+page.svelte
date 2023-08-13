@@ -62,7 +62,10 @@
                 </div>
             </div>
             <div class="textbox">
-
+                The Hardware team delves into the intricacies of aircraft design, spanning mechanical,
+                thermal, and aeronautical domains. Team members will hone skills in research, design,
+                CAD modeling, construction, and testing of the airframe, propulsion, and electrical subsystems.
+                Ideal candidates are from majors like MechE, AeroE, MSE, EECS, and other engineering disciplines.
             </div>
         </div>
         <div class="stentry">
@@ -74,11 +77,10 @@
             </div>
             <div class="textbox">
                 <div class="textinternal">
-                    The software subteam ensures seamless aircraft operations, managing flight control,
-                    autonomy, and mission planning. It offers an intuitive remote piloting and in-flight
-                    piloting interfaces, logs flight telemetry data, manages on-board systems and prioritizes
-                    safety with fail-safe mechanisms. The software subsystem also handles firmware updates and
-                    maintenance are handled for optimal performance.
+                    Focused on technological advances, the Software team is centered on developing the
+                    flight control system, simulations, air mobility management, and automation controls.
+                    We primarily look for individuals majoring in EECS, Computer Science, and Data Science.
+
                 </div>
             </div>
         </div>
@@ -90,7 +92,10 @@
                 </div>
             </div>
             <div class="textbox">
-
+                Drawing upon the collective expertise of VTOL at Berkeley, the Consulting team
+                offers services to pioneering companies in the mobility sector. Team members will refine
+                their skills in professional research, business analysis, and impactful presentation.
+                Business Administration majors are especially suited for this subteam.
             </div>
         </div>
         <div class="stentry">
@@ -102,11 +107,11 @@
             </div>
             <div class="textbox">
                 <div class="textinternal">
-                    The business and operation subteams drive the club’s success by handling aspects
-                    such as sponsorship, marketing, finance, and social media. They secure sponsorships,
-                    plan marketing strategies, manage budgets, and curate engaging content for the club's
-                    social media platforms like Instagram. By fostering partnerships and optimizing resources,
-                    they ensure the club's growth and stability.
+                    The Marketing team is responsible for creating compelling visual and digital
+                    content, from flyers and posters to social media interactions. Team members
+                    will create photos, videos, and graphics to amplify the club's public engagement.
+                    We welcome individuals with professional experience in related fields.
+
                 </div>
             </div>
         </div>
@@ -119,11 +124,10 @@
             </div>
             <div class="textbox">
                 <div class="textinternal">
-                    The business and operation subteams drive the club’s success by handling aspects
-                    such as sponsorship, marketing, finance, and social media. They secure sponsorships,
-                    plan marketing strategies, manage budgets, and curate engaging content for the club's
-                    social media platforms like Instagram. By fostering partnerships and optimizing resources,
-                    they ensure the club's growth and stability.
+                    Dedicated to forging strong industry partnerships, the Sponsor Relations team
+                    tirelessly pursues potential sponsors and keeps them apprised of our progress.
+                    Team members will develop expertise in designing pitch decks, crafting presentations,
+                    and reaching out to potential corporate partners.
                 </div>
             </div>
         </div>

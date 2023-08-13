@@ -139,7 +139,7 @@
 <style>
     .textinfo {
         color: black;
-        font-size: 15px;
+        font-size: 1vw;
         font-family: "Open Sans", sans-serif;
         font-weight: 320;
         line-height: 30px;
