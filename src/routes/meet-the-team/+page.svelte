@@ -23,8 +23,8 @@
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
         <img class="bannerimg" src={banner}>
-        <img class="bannerimg" src="./src/lib/imgs/meettheteamimgs/banner.png">
-        <img class="bannerimg" src="./src/lib/imgs/meettheteamimgs/banner.png">
+        <img class="bannerimg" src={banner}>
+        <img class="bannerimg" src={banner}>
     </div>
     <div class="title bannersize">
         Meet Our Leadership
@@ -139,11 +139,11 @@
 <style>
     .textinfo {
         color: black;
-        font-size: 1vw;
+        font-size: 1.8vh;
         font-family: "Open Sans", sans-serif;
         font-weight: 320;
         line-height: 30px;
-        letter-spacing: 0.30px;
+        letter-spacing: 100%;
         word-wrap: break-word;
 
         position: absolute;
