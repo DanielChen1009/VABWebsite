@@ -326,10 +326,10 @@
         height: 47vh;
     }
     .bannerimg {
-        display: block;
         float: left;
         padding: 0;
         margin: 0;
+        width: 100vw;
     }
     .title {
         position: absolute;

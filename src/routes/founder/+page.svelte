@@ -10,9 +10,10 @@
     import founderimgright from "$lib/imgs/founderimgs/founderimgright.png";
     import founderimgleft from "$lib/imgs/founderimgs/founderimgleft.png";
     import founderimgcenter from "$lib/imgs/founderimgs/founderimgcenter.png";
-    import p1 from "$lib/imgs/founderimgs/p1.jpeg";
+    import p1 from "$lib/imgs/founderimgs/p1.png";
     import p2 from "$lib/imgs/founderimgs/p2.png";
     import p3 from "$lib/imgs/founderimgs/p3.png";
+    import p4 from "$lib/imgs/founderimgs/p4.png";
     import p5 from "$lib/imgs/founderimgs/p5.png";
     import p6 from "$lib/imgs/founderimgs/p6.png";
     import circle from "$lib/imgs/founderimgs/circle.svg";
@@ -127,7 +128,7 @@
             </div>
             <div style="width: 100%; display:flex; justify-content: left">
                 <div class="timeimgwrapper" style="justify-content: left;">
-                    <img class="timelineimg">
+                    <img class="timelineimg" src={p4}>
                 </div>
             </div>
         </EntryContainer>
@@ -251,16 +252,15 @@
     .timelinewrapper {
         position: relative;
         height: 350vh;
-        width: 100vw;
+        width: 100%;
     }
     .bannersize {
-        width: 100vw;
+        width: 100%;
         height: 47vh;
     }
     .circle {
         position: absolute;
         top: 50vh;
-        left: 50vw;
         width: 10vw;
         transform: translate(-50%, -50%);
     }

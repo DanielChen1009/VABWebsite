@@ -51,7 +51,7 @@
                 <div transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
                     studying MSE and Business, boasts extensive venture capital experience.
                     He raised ~$15M for a portfolio company and was selected to help lead
-                    his firm’s most recent investment fund of ~$700M. He's also worked as a PM,
+                    his firm’s most recent investment fund of ~$460M. He's also worked as a PM,
                     helping Tencent CEO, Ma Huateng, confirm game event development and company
                     acquisition details.
                 </div>

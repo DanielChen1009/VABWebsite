@@ -10,7 +10,7 @@
     import {onMount} from "svelte";
 
     import blurb from "$lib/imgs/blurb.png";
-    import hamburger from "$lib/imgs/hamburger.png";
+    import hamburger from "$lib/imgs/hamburger.svg";
     import landingbg from "$lib/imgs/landingbg.png";
     import logotxt from "$lib/imgs/logotxt.png";
     import VABLogo from "$lib/imgs/VABLogo.png";
@@ -22,14 +22,16 @@
             const style = getComputedStyle(node);
             const transform = style.transform === 'none' ? '' : style.transform;
 
-            return fly;
+            return fade;
         }
     });
 
-    onMount(async () => {document.addEventListener("mousedown", (e) => {
+    onMount(async () => {
+        document.addEventListener("mousedown", (e) => {
         if (!visible && e.target.id === "dim") {
             visible = true;
         }
+
     });})
 
     let visible = true;
