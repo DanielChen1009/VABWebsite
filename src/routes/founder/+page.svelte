@@ -48,17 +48,17 @@
     </div>
     <div class="title bannersize">
         FOUNDER'S STORY
-        <img class="circle top center" src={circle}>
+        <img class="circle red center">
     </div>
 </div>
 <div class="timelinewrapper">
     <div class="midline center"></div>
-    <div class="dot orange center" style="top: 40vh;"></div>
-    <div class="dot orange center" style="top: 80vh;"></div>
-    <div class="dot orange center" style="top: 120vh;"></div>
-    <div class="dot orange center" style="top: 160vh;"></div>
-    <div class="dot orange center" style="top: 200vh;"></div>
-    <div class="dot orange center" style="top: 240vh;"></div>
+    <div class="dot red center" style="top: 40vh;"></div>
+    <div class="dot red center" style="top: 80vh;"></div>
+    <div class="dot red center" style="top: 120vh;"></div>
+    <div class="dot red center" style="top: 160vh;"></div>
+    <div class="dot red center" style="top: 200vh;"></div>
+    <div class="dot red center" style="top: 240vh;"></div>
     <div class="dot black center" style="top: 280vh;"></div>
     <div class="entrycontainer centerleft" style="top: {clientHeight * 0.405 - h1/2}px;">
         <EntryContainer dur="1000" x_trans="-300">
@@ -182,7 +182,7 @@
     .timeimgwrapper {
         display: flex;
         width: 60%;
-        background-color: #FF2700;
+        background-color: #980000;
         margin: 0;
     }
     .centerleft {
@@ -217,7 +217,7 @@
         letter-spacing: 0.36px;
         word-wrap: break-word;
 
-        background-color: rgba(255, 39, 0, 0.80);
+        background-color: #980000;
         padding: 0 1vw 0 1vw;
     }
     .entrycontainer {
@@ -228,8 +228,8 @@
     .black {
         background-color: black;
     }
-    .orange {
-        background-color: #FF4D2D;
+    .red {
+        background-color: #980000;
     }
 
     .dot {
@@ -262,6 +262,8 @@
         position: absolute;
         top: 50vh;
         width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
         transform: translate(-50%, -50%);
     }
     .title {

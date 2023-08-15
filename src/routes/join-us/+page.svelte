@@ -151,17 +151,17 @@
         width: 100%;
         height: 5vh;
         color: white;
-        background-color: rgba(255, 39, 0, 0.80);
+        background-color: rgba(152, 0, 0, 0.80);
         border-radius: 2vh;
         border: none;
         filter: drop-shadow(0 0.25vh 0.25vh rgba(0, 0, 0, 0.5));
     }
     .submitbutton:hover {
-        background-color: rgba(255, 39, 0, 0.8);
+        background-color: rgba(152, 0, 0, 0.8);
         filter: drop-shadow(0 0.1vh 0.25vh rgba(0, 0, 0, 0.5));
     }
     .sublabel {
-        color: rgba(255, 39, 0, 0.80);
+        color: rgba(152, 0, 0, 0.80);
         font-size: 1.5vh;
         font-family: "Unica One", sans-serif;
         font-weight: 400;
@@ -193,13 +193,13 @@
         line-height: 100%;
     }
     .checkwrap:hover input ~ .checkbutton {
-        background-color: rgba(255, 39, 0, 0.5);
+        background-color: rgba(152, 0, 0, 0.5);
     }
     .checkwrap input:active ~ .checkbutton {
-        background-color: rgba(255, 39, 0, 0.8);
+        background-color: rgba(152, 0, 0, 0.8);
     }
     .checkwrap input:checked ~ .checkbutton {
-        background-color: rgba(255, 39, 0, 0.8);
+        background-color: rgba(152, 0, 0, 0.8);
     }
     .checkbutton {
         position: absolute;
@@ -229,7 +229,7 @@
         margin-top: 3vh;
     }
     .checklabel {
-        color: rgba(255, 39, 0, 0.80);
+        color: rgba(152, 0, 0, 0.80);
         font-size: 2vh;
         font-family: "Unica One", sans-serif;
         font-weight: 400;
@@ -288,7 +288,7 @@
     }
     .boxtitle {
         position: absolute;
-        background-color: #FF2700;
+        background-color: #980000;
         color: white;
         font-size: 3vh;
         font-family: "Unica One", cursive;
@@ -322,7 +322,7 @@
     .border {
         display: flex;
         position: relative;
-        border: 1vw #FF2700 solid;
+        border: 1vw #980000 solid;
         height: 90%;
         width: 80vw;
         padding: 0;

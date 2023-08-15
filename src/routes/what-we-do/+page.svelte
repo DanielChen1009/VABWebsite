@@ -189,7 +189,7 @@
         top: 60%;
         height: 25%;
         width: 100%;
-        background-color: rgba(255, 39, 0, 0.80);
+        background-color: rgba(152, 0, 0, 0.80);
 
         color: white;
         font-size: 5vh;

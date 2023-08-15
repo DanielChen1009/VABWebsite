@@ -75,7 +75,7 @@
         <div class="titletxt">Partners & Clients</div>
     </div>
     <div class="sponsors">
-        <img class="sponsorlogo" src={met} onclick="window.open('https://met.berkeley.edu/', '_blank')">
+        <img class="sponsorlogo" src={met} onclick="window.open('https://berkeley.edu/', '_blank')">
         <img style="height: 25vh" class="sponsorlogo" src={futurex} onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
@@ -228,7 +228,7 @@
         color:black;
         cursor: pointer;
         text-decoration: underline;
-        text-decoration-color: rgba(255, 39, 0, 1);
+        text-decoration-color: #980000;
     }
 
     .text {
