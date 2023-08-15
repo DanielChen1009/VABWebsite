@@ -42,3 +42,7 @@ You can preview the production build with `npm run preview`.
 ## Deployment commands 
 docker buildx build --platform linux/amd64,linux/arm64 --push -t duhechen1009/vabwebsite .
 caprover deploy -i duhechen1009/vabwebsite 
+
+## Server Disk Cleanup 
+sudo docker container prune --force
+sudo docker image prune --all

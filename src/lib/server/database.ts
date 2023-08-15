@@ -1,5 +1,5 @@
-import { addDoc, query, getDocs} from "firebase/firestore"
 import { entryCollection } from "../../Firebase";
+import { addDoc, query, getDocs} from "firebase/firestore"
 
 
 export async function getAllEntries() {
