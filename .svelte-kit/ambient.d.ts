@@ -26,6 +26,7 @@
  * ```
  */
 declare module '$env/static/private' {
+	export const ORIGIN: string;
 	export const NVM_INC: string;
 	export const MANPATH: string;
 	export const NODE: string;
@@ -121,6 +122,7 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
+		ORIGIN: string;
 		NVM_INC: string;
 		MANPATH: string;
 		NODE: string;

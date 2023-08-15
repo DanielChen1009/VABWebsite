@@ -19,3 +19,6 @@ const app = initializeApp(firebaseConfig);
 let db = getFirestore(app)
 export const auth = getAuth(app)
 export const entryCollection = collection(db, "entries");
+export {
+ addDoc, query, getDocs
+} from "firebase/firestore";

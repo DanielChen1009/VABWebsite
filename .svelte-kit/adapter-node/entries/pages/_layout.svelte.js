@@ -2,7 +2,7 @@ import { c as create_ssr_component, b as subscribe } from "../../chunks/ssr.js";
 import { p as page } from "../../chunks/stores.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "body{padding:0;margin:0}",
+  code: "html{padding:0;margin:0}body{padding:0;margin:0;overscroll-behavior-y:none;overscroll-behavior-x:none}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
