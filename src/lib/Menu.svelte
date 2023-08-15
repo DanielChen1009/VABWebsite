@@ -16,7 +16,7 @@
     import VABLogo from "$lib/imgs/VABLogo.png";
 
     const [send, receive] = crossfade({
-        duration: (d) => Math.sqrt(d * 500),
+        duration: 500,
 
         fallback(node, params) {
             const style = getComputedStyle(node);
@@ -110,7 +110,7 @@
         color:white;
         margin-bottom: 2vh;
         padding-bottom: 2vh;
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid #980000;
     }
 
     .dimmed {

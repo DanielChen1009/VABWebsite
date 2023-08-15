@@ -37,3 +37,8 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 # VABWebsite
+
+
+## Deployment commands 
+docker buildx build --platform linux/amd64,linux/arm64 --push -t duhechen1009/vabwebsite .
+caprover deploy -i duhechen1009/vabwebsite 

@@ -12,7 +12,7 @@
     import {Menu} from "$lib/index.ts";
     import bg1 from "$lib/imgs/bg1.png";
     import bg2 from "$lib/imgs/bg2.png";
-    import ButtonArrow from "$lib/imgs/ButtonArrow.png";
+    import ButtonArrow from "$lib/imgs/ButtonArrow.svg";
     import futurex from "$lib/imgs/futurex.png";
     import met from "$lib/imgs/met.png";
     import render2 from "$lib/imgs/render2.png";

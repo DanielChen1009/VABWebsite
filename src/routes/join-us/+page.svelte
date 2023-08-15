@@ -25,8 +25,12 @@
 <div class="fullsize">
     <div class="border">
         <div class="form">
-            <img src={formtitle} style="width: 60%">
-            <img src={formsubtitle} style="width: 60%; margin-bottom: 5vh;">
+            <div class="txtinp" style="font-size: 3vw;">
+                Club Interest Form
+            </div>
+            <div class="sublabel" style="font-size: 1.1vw; letter-spacing: 0.5vw; margin-bottom: 3vw">
+                Sign Up to be a General Member
+            </div>
             <form class="inputs" method="POST" action="?/create">
                 <div style="float:left; width: 60%">
                     <label style="width: 100%">
