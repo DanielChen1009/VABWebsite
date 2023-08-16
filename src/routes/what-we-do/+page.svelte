@@ -358,5 +358,6 @@
         margin:0;
         overscroll-behavior-y: none;
         overscroll-behavior-x: none;
+        overflow-x: hidden;
     }
 </style>

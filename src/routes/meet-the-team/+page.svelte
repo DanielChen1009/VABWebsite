@@ -97,7 +97,7 @@
         </div>
     </div> <!-- Christine !-->
     <div class="entrycontainer">
-        <div class="titlecontainer">Antonia Dauria</div>
+        <div class="titlecontainer">Antonia d'Auria</div>
         <div class="infocontainer">
             <InfoBox src={antoniapfp} id="p6" transform={true} top={20}>
                 <div transition:fade={{duration: 200}} class="textinfo">Antonia is an undergraduate studying Sociology.

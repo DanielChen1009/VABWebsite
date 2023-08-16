@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as add_attribute, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, b as add_attribute, v as validate_component } from "../../chunks/ssr.js";
 import { M as Menu } from "../../chunks/Menu.js";
 const bg1 = "/_app/immutable/assets/bg1.f21a8c8a.png";
 const bg2 = "/_app/immutable/assets/bg2.6bb57bec.png";

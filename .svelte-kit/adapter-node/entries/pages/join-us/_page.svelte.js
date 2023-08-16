@@ -1,4 +1,4 @@
-import { c as create_ssr_component, d as add_attribute, v as validate_component } from "../../../chunks/ssr.js";
+import { c as create_ssr_component, b as add_attribute, v as validate_component } from "../../../chunks/ssr.js";
 import { M as Menu } from "../../../chunks/Menu.js";
 const campanile = "/_app/immutable/assets/campanile.10b97d18.png";
 const joinusbanner = "/_app/immutable/assets/joinusbanner.ff37e414.png";

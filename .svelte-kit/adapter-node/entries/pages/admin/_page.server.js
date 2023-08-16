@@ -1,15 +1,15 @@
-import { a as auth } from "../../../chunks/Firebase.js";
-import { r as redirect } from "../../../chunks/index.js";
-import { g as getAllEntries } from "../../../chunks/database.js";
+import { d as db } from "../../../chunks/db.js";
 async function load() {
-  console.log(auth.currentUser);
-  if (!auth.currentUser) {
-    throw redirect(307, "/admin/login");
+  const entryCollection = await db.collection("entries");
+  const entries = await entryCollection.find();
+  let rets = [];
+  for await (const doc of entries) {
+    console.log(doc);
+    delete doc["_id"];
+    rets.push(doc);
   }
-  const entries = await getAllEntries();
-  console.log(entries);
   return {
-    entries
+    entries: rets
   };
 }
 export {

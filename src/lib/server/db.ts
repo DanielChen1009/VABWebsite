@@ -1,6 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-import { MongoClient} from "mongodb";
-const uri = "mongodb+srv://duhechen1009:l8uoWg6hXzR4ojC7@dev-cluster.4fnpbzu.mongodb.net/?retryWrites=true&w=majority";
+import { default as mongodb } from 'mongodb';
+const MongoClient = mongodb.MongoClient;
+import { DB_URI } from '$env/static/private'
+const uri = DB_URI;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri);
 

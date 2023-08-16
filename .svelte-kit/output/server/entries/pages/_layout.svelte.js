@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as subscribe } from "../../chunks/ssr.js";
+import { c as create_ssr_component, s as subscribe } from "../../chunks/ssr.js";
 import { p as page } from "../../chunks/stores.js";
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
