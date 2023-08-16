@@ -4,11 +4,22 @@
     import formsubtitle from "$lib/imgs/joinusimgs/formsubtitle.png"
     import formtitle from "$lib/imgs/joinusimgs/formtitle.png"
     import joinusbanner from "$lib/imgs/joinusimgs/joinusbanner.png"
+    import {goto} from "$app/navigation";
+    import {onMount} from "svelte";
 
     /** @type {import('@sveltejs/adapter-vercel').Config} */
     export const config = {
         runtime: 'edge'
     };
+
+    onMount(() => {
+        if (window.location.href.indexOf("create") !== -1) {
+            console.log(window.location.href)
+            submitted = true;
+        }
+    })
+
+    let submitted = false;
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +40,28 @@
 </div>
 <div class="fullsize">
     <div class="border">
-        <div class="form">
+        {#if submitted}
+            <div class="form txtinp" style="
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 3vw">
+                <div style="flex-basis: 100%; height: 20%"></div>
+                Thank you for submitting!
+                <div style="flex-basis: 100%; height: 0"></div>
+                <button class="submitbutton" on:click={() => {
+                    goto("/join-us");
+                    submitted=false;}
+                    } style="margin: 0; width: 50%">
+                    Submit Another Form
+                </button>
+                <div style="flex-basis: 100%; height: 20%"></div>
+            </div>
+        {/if}
+        {#if !submitted}
+            <div class="form">
             <div class="txtinp" style="font-size: 3vw;">
                 Club Interest Form
             </div>
@@ -138,6 +170,7 @@
                 </div>
             </form>
         </div>
+        {/if}
         <div class="campanilewrapper">
             <img src={campanile} class="img">
         </div>

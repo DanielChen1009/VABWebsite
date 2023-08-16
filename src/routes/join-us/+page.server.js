@@ -1,6 +1,7 @@
 import db from "$lib/server/db.ts";
+import redirect from "@sveltejs/kit";
+import { page } from "$app/stores"
 /** @type {import('./$types').Actions} */
-
 export const actions = {
     // create: async ({request}) => {
     //     const formData = await request.formData();
@@ -26,7 +27,13 @@ export const actions = {
             console.log(entry);
             entry = entryIterator.next();
         }
-        await db.collection('entries').insertOne(data)
-        return {success: true}
+        try {
+            await db.collection('entries').insertOne(data)
+        } catch (e) {
+            console.log(e);
+            throw redirect(307, "/join-us")
+        }
+
+
     }
 };
