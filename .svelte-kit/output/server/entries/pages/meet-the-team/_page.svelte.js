@@ -109,7 +109,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                     graphic design, effective team coordination, and astute production leadership.</div>`;
       }
     }
-  )}</div></div>  <div class="entrycontainer svelte-77x27v"><div class="titlecontainer svelte-77x27v" data-svelte-h="svelte-k4f32m">Antonia Dauria</div> <div class="infocontainer svelte-77x27v">${validate_component(InfoBox, "InfoBox").$$render(
+  )}</div></div>  <div class="entrycontainer svelte-77x27v"><div class="titlecontainer svelte-77x27v" data-svelte-h="svelte-ywt1kh">Antonia d&#39;Auria</div> <div class="infocontainer svelte-77x27v">${validate_component(InfoBox, "InfoBox").$$render(
     $$result,
     {
       src: antoniapfp,

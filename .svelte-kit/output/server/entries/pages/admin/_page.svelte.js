@@ -31,8 +31,11 @@ function checkTeamInterest(entry) {
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
   console.log(data.entries);
+  const config = { runtime: "edge" };
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
+  if ($$props.config === void 0 && $$bindings.config && config !== void 0)
+    $$bindings.config(config);
   $$result.css.add(css);
   return `<div class="center fullsize svelte-1rgdv7m"><div class="table-wrapper svelte-1rgdv7m"><div class="table-scroll svelte-1rgdv7m"><table class="table svelte-1rgdv7m"><thead data-svelte-h="svelte-7zdds7"><tr><th class="header svelte-1rgdv7m" style="border-left: none">Name</th> <th class="header svelte-1rgdv7m">Major</th> <th class="header svelte-1rgdv7m">Year</th> <th class="header svelte-1rgdv7m">Email</th> <th class="header svelte-1rgdv7m">Phone Number</th> <th class="header svelte-1rgdv7m">Preferred Contact</th> <th class="header svelte-1rgdv7m">Team Interest</th> <th class="header svelte-1rgdv7m" style="border-right: none">Referral</th></tr></thead> <tbody>${each(data.entries, (entry) => {
     return `<tr><td class="cell svelte-1rgdv7m" style="border-left: none">${escape(entry["fname"])} ${escape(entry["lname"])}</td> <td class="cell svelte-1rgdv7m">${escape(entry["major"])}</td> <td class="cell svelte-1rgdv7m">${escape(entry["year"])}</td> <td class="cell svelte-1rgdv7m">${escape(entry["email"])}</td> <td class="cell svelte-1rgdv7m">${escape(entry["pnum"])}</td> <td class="cell svelte-1rgdv7m">${escape(checkPrefContact(entry))}</td> <td class="cell svelte-1rgdv7m">${each(checkTeamInterest(entry), (tint) => {

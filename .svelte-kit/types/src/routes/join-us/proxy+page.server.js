@@ -1,7 +1,7 @@
 // @ts-nocheck
 import db from "$lib/server/db.ts";
-import redirect from "@sveltejs/kit";
-import { page } from "$app/stores"
+import {goto} from "$app/navigation";
+
 /** */
 export const actions = {
     // create: async ({request}) => {
@@ -32,9 +32,7 @@ export const actions = {
             await db.collection('entries').insertOne(data)
         } catch (e) {
             console.log(e);
-            throw redirect(307, "/join-us")
+            goto("/join-us")
         }
-
-
     }
 };
