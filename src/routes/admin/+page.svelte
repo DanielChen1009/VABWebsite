@@ -3,26 +3,26 @@
     console.log(data.entries);
 
     function checkPrefContact(entry) {
-        if (entry["data"]["bothcheck"] || (entry["data"]["emailcheck"] && entry["data"]["textcheck"])) {
+        if (entry["bothcheck"] || (entry["emailcheck"] && entry["textcheck"])) {
             return "Both";
         }
-        if (entry["data"]["emailcheck"]) {
+        if (entry["emailcheck"]) {
             return "Email";
         }
-        if (entry["data"]["textcheck"]) {
+        if (entry["textcheck"]) {
             return "Text";
         }
     }
 
     function checkTeamInterest(entry) {
         let ret = [];
-        if (entry["data"]["engin"]) {
+        if (entry["engin"]) {
             ret.push("Engineering");
         }
-        if (entry["data"]["business"]) {
+        if (entry["business"]) {
             ret.push("Business");
         }
-        if (entry["data"]["consulting"]) {
+        if (entry["consulting"]) {
             ret.push("Consulting");
         }
         return ret;
@@ -45,19 +45,19 @@
                 {#each data.entries as entry}
                     <tr>
                         <td class="cell" style="border-left: none">
-                            {entry["data"]["fname"]} {entry["data"]["lname"]}
+                            {entry["fname"]} {entry["lname"]}
                         </td>
                         <td class="cell">
-                            {entry["data"]["major"]}
+                            {entry["major"]}
                         </td>
                         <td class="cell">
-                            {entry["data"]["year"]}
+                            {entry["year"]}
                         </td>
                         <td class="cell">
-                            {entry["data"]["email"]}
+                            {entry["email"]}
                         </td>
                         <td class="cell">
-                            {entry["data"]["pnum"]}
+                            {entry["pnum"]}
                         </td>
                         <td class="cell">
                             {checkPrefContact(entry)}
@@ -68,7 +68,7 @@
                             {/each}
                         </td>
                         <td class="cell" style="border-right: none">
-                            {entry["data"]["refer"]}
+                            {entry["refer"]}
                         </td>
                     </tr>
                 {/each}
