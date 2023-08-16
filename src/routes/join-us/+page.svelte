@@ -4,6 +4,11 @@
     import formsubtitle from "$lib/imgs/joinusimgs/formsubtitle.png"
     import formtitle from "$lib/imgs/joinusimgs/formtitle.png"
     import joinusbanner from "$lib/imgs/joinusimgs/joinusbanner.png"
+
+    /** @type {import('@sveltejs/adapter-vercel').Config} */
+    export const config = {
+        runtime: 'edge'
+    };
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
