@@ -48,7 +48,7 @@
     </div>
     <div class="title bannersize">
         FOUNDER'S STORY
-        <img class="circle red center">
+        <div class="circle red center"></div>
     </div>
 </div>
 <div class="timelinewrapper">
