@@ -1,10 +1,11 @@
+// @ts-nocheck
 import db from "$lib/server/db.ts"
 
 import {redirect} from "@sveltejs/kit";
-/** @type {import('./$types').Actions} */
+/** */
 
 export const actions = {
-    login: async ({cookies, request}) => {
+    login:/** @param {import('./$types').RequestEvent} event */  async ({cookies, request}) => {
         const formData = await request.formData();
         let data = {};
         const entryIterator = formData.entries();

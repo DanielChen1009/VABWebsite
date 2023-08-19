@@ -1,17 +1,17 @@
 // @ts-nocheck
 import db from "$lib/server/db.ts";
-/** */
+import {redirect} from "@sveltejs/kit";
+/** @param {Parameters<import('./$types').PageLoad>[0]} event */
 
-export async function load() {
-    // console.log(auth.currentUser)
-    // if (!auth.currentUser) {
-    //     throw redirect(307, "/admin/login")
-    // }
+export async function load({ cookies }) {
+    const verified = cookies.get("verified")
+    if (!verified) {
+        throw redirect(307, "/admin/login")
+    }
     const entryCollection = await db.collection('entries');
     const entries = await entryCollection.find();
     let rets = [];
     for await (const doc of entries) {
-        console.log(doc);
         delete doc['_id']
         rets.push(doc);
     }

@@ -1,6 +1,5 @@
 <script>
     export let data;
-    console.log(data.entries);
 
     function checkPrefContact(entry) {
         if (entry["bothcheck"] || (entry["emailcheck"] && entry["textcheck"])) {
