@@ -13,7 +13,7 @@
     import bg1 from "$lib/imgs/bg1.png";
     import bg2 from "$lib/imgs/bg2.png";
     import ButtonArrow from "$lib/imgs/ButtonArrow.svg";
-    import futurex from "$lib/imgs/futurex.png";
+    import futurex from "$lib/imgs/futurex.svg";
     import met from "$lib/imgs/met.png";
     import render2 from "$lib/imgs/render2.png";
 
@@ -76,7 +76,7 @@
     </div>
     <div class="sponsors">
         <img class="sponsorlogo" src={met} onclick="window.open('https://berkeley.edu/', '_blank')">
-        <img style="height: 25vh" class="sponsorlogo" src={futurex} onclick="window.open('https://www.futurexcapital.com/', '_blank')">
+        <img class="sponsorlogo" src={futurex} onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
