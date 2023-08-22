@@ -9,15 +9,15 @@
     import InfoBox from "$lib/InfoBox.svelte";
     import {Menu} from "$lib";
 
-    import banner from "$lib/imgs/meettheteamimgs/banner.png"
-    import alanpfp from "$lib/imgs/meettheteamimgs/alanpfp.jpeg"
-    import alvinpfp from "$lib/imgs/meettheteamimgs/alvinpfp.jpeg"
-    import antoniapfp from "$lib/imgs/meettheteamimgs/antoniapfp.png"
-    import christinepfp from "$lib/imgs/meettheteamimgs/christinepfp.png"
-    import cindypfp from "$lib/imgs/meettheteamimgs/cindypfp.png"
-    import danielpfp from "$lib/imgs/meettheteamimgs/danielpfp.jpeg"
-    import haripfp from "$lib/imgs/meettheteamimgs/haripfp.png"
-    import shasipfp from "$lib/imgs/meettheteamimgs/shasipfp.jpeg"
+    import banner from "$lib/imgs/meettheteamimgs/banner.jpeg"
+    import alanpfp from "$lib/imgs/meettheteamimgs/alanpfp.jpg"
+    import alvinpfp from "$lib/imgs/meettheteamimgs/alvinpfp.jpg"
+    import antoniapfp from "$lib/imgs/meettheteamimgs/antoniapfp.jpg"
+    import christinepfp from "$lib/imgs/meettheteamimgs/christinepfp.jpg"
+    import cindypfp from "$lib/imgs/meettheteamimgs/cindypfp.jpg"
+    import danielpfp from "$lib/imgs/meettheteamimgs/danielpfp.jpg"
+    import haripfp from "$lib/imgs/meettheteamimgs/haripfp.jpg"
+    import shasipfp from "$lib/imgs/meettheteamimgs/shasipfp.jpg"
 </script>
 
 <div class="banner bannersize">
@@ -47,7 +47,7 @@
     <div class="entrycontainer">
         <div class="titlecontainer">Alvin Xiao</div>
         <div class="infocontainer">
-            <InfoBox src={alvinpfp} id="p2" transform={true} top={100}>
+            <InfoBox src={alvinpfp} id="p2" transform={true} top={10}>
                 <div transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
                     studying MSE and Business, boasts extensive venture capital experience.
                     He raised ~$15M for a portfolio company and was selected to help lead
