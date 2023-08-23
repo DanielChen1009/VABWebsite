@@ -60,10 +60,10 @@
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
-        transport? We hope you’ll <a class="link" on:click={() => {goto("/join-us")}}>join us</a> on the path to our maiden voyage!
+        transport? We hope you’ll <a class="link" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>join us</a> on the path to our maiden voyage!
     </div>
     <div class="buttondiv removebg">
-        <button class="linkbutton" on:click={() => {goto("/join-us")}}>
+        <button class="linkbutton" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>
             Become a Member
             <img src={ButtonArrow}>
         </button>

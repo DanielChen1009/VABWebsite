@@ -73,7 +73,7 @@
         <button class="pagenavbut" on:click={() => {goto("/meet-the-team");}}>Meet the Team</button>
 <!--        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>-->
 <!--        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>-->
-        <button class="pagenavbut" on:click={() => {goto("/join-us"); visible = true}}>Join Us!</button>
+        <button class="pagenavbut" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48"); visible = true}}>Join Us!</button>
     </div>
 {/if}
 
