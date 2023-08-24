@@ -181,6 +181,7 @@
 <Menu includeMainLogo={false}/>
 
 <style>
+
     .submitbutton {
         font-size: 2vh;
         font-family: "Unica One", sans-serif;

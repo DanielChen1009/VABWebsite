@@ -164,7 +164,7 @@
         position: fixed;
         top: 1vh;
         left: 3vh;
-        width: 10vh;
+        width: 8vh;
         z-index: 99;
     }
     @media only screen and (min-width: 768px) {

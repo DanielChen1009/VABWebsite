@@ -64,8 +64,10 @@
     </div>
     <div class="buttondiv removebg">
         <button class="linkbutton" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>
-            Become a Member
-            <img src={ButtonArrow}>
+            <span class="buttontxt">
+                Become a Member
+            </span>
+            <img class="arrow" src={ButtonArrow}>
         </button>
     </div>
 </div>
@@ -80,85 +82,263 @@
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
-            Become a Partner
-            <img src={ButtonArrow}>
+            <span class="buttontxt">
+                Become a Partner
+            </span>
+            <img class="arrow" src={ButtonArrow}>
         </button>
     </div>
 </div>
 
 <style>
-    .bgimg {
-        height: 100%;
-        position: absolute;
-        object-fit: none;
-        object-position: 50% 120%;
-    }
-    .blurb4 {
-        position: absolute;
-        top: 20vh;
-        width: 80%;
-        height: 15vh;
-        z-index: 3;
+    @media only screen and (min-width: 768px) {
+        .bgimg {
+            height: 100%;
+            position: absolute;
+            object-fit: none;
+            object-position: 50% 120%;
+        }
 
-        color: #D9D9D9;
-        font-size: 2.5vw;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 200;
-        line-height: 75px;
-        letter-spacing: 0.60px;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .blurb3 {
-        position: absolute;
-        top: 8vh;
-        width: 80%;
-        height: 15vh;
-        z-index: 3;
+        .blurb1 {
+            position: absolute;
+            top: 110vh;
+            width: 80%;
+            height: 20vh;
+            z-index: 3;
 
-        color: #D9D9D9;
-        font-size: 4vw;
-        font-family: "Unica One", sans-serif;
-        font-weight: 400;
-        line-height: 75px;
-        letter-spacing: 1px;
-        word-wrap: break-word;
-        text-align: center;
-    }
-    .blurb2 {
-        position: absolute;
-        top: 135vh;
-        width: 80%;
-        height: 15vh;
-        z-index: 3;
+            color: #D9D9D9;
+            font-size: 3vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 180%;
+            letter-spacing: 0.94px;
+            word-wrap: break-word;
+            text-align: center;
+        }
 
-        color: #D9D9D9;
-        font-size: 4vh;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 200;
-        line-height: 100%;
-        letter-spacing: 0.5vh;
-        word-wrap: break-word;
-        text-align: center;
+        .blurb2 {
+            position: absolute;
+            top: 135vh;
+            width: 80%;
+            height: 15vh;
+            z-index: 3;
 
-        border-bottom: white 2vh solid;
-    }
-    .blurb1 {
-        position: absolute;
-        top: 110vh;
-        width: 80%;
-        height: 20vh;
-        z-index: 3;
+            color: #D9D9D9;
+            font-size: 2vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            line-height: 100%;
+            letter-spacing: 0.5vh;
+            word-wrap: break-word;
+            text-align: center;
 
-        color: #D9D9D9;
-        font-size: 5vh;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        line-height: 180%;
-        letter-spacing: 0.94px;
-        word-wrap: break-word;
-        text-align: center;
+            border-bottom: white 2vh solid;
+        }
+
+        .blurb3 {
+            position: absolute;
+            top: 8vh;
+            width: 80%;
+            height: 15vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 4vw;
+            font-family: "Unica One", sans-serif;
+            font-weight: 400;
+            line-height: 75px;
+            letter-spacing: 1px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .blurb4 {
+            position: absolute;
+            top: 20vh;
+            width: 80%;
+            height: 15vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 2.5vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            line-height: 75px;
+            letter-spacing: 0.60px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .text {
+            color: black;
+            font-size: 2vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 5vw;
+            letter-spacing: 0.94px;
+            word-wrap: break-word;
+            padding-right: 8vw;
+            padding-top: 8vh;
+            padding-left: 10vw;
+        }
+
+        .linkbutton {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 6vh;
+            width: 30vw;
+            border-radius: 3.5vh;
+            background-color: black;
+            color: white;
+            font-size: 3vh;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 100%;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }
+
+        .titletxt {
+            position: relative;
+            font-size: 6vw;
+            top: 9vh;
+            color: black;
+            font-family: "Unica One", cursive;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 7px;
+            word-wrap: break-word;
+            vertical-align: center;
+        }
     }
+
+    @media only screen and (max-width: 768px) {
+        .bgimg {
+            height: 100%;
+            position: absolute;
+            object-fit: none;
+        }
+
+        .blurb1 {
+            position: absolute;
+            top: 110vh;
+            width: 80%;
+            height: 20vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 6vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 180%;
+            letter-spacing: 0.94px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .blurb2 {
+            position: absolute;
+            top: 140vh;
+            width: 80%;
+            height: 10vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 5vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            line-height: 100%;
+            letter-spacing: 0.5vh;
+            word-wrap: break-word;
+            text-align: center;
+
+            border-bottom: white 1vw solid;
+        }
+
+        .blurb4 {
+            position: absolute;
+            top: 20vh;
+            width: 80%;
+            height: 15vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 4.5vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 200;
+            line-height: 120%;
+            letter-spacing: 0.60px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .blurb3 {
+            position: absolute;
+            top: 8vh;
+            width: 80%;
+            height: 15vh;
+            z-index: 3;
+
+            color: #D9D9D9;
+            font-size: 5vw;
+            font-family: "Unica One", sans-serif;
+            font-weight: 400;
+            line-height: 75px;
+            letter-spacing: 1px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .text {
+            color: black;
+            font-size: 4vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 6vw;
+            letter-spacing: 0.94px;
+            word-wrap: break-word;
+            padding-right: 8vw;
+            padding-top: 8vw;
+            padding-left: 10vw;
+        }
+
+        .linkbutton {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 6vh;
+            width: 60vw;
+            border-radius: 3.5vh;
+            background-color: black;
+            color: white;
+            font-size: 3vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }
+
+        .arrow {
+            height: 30%;
+        }
+
+        .titletxt {
+            position: relative;
+            font-size: 12vw;
+            top: 9vh;
+            color: black;
+            font-family: "Unica One", cursive;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 7px;
+            word-wrap: break-word;
+            vertical-align: center;
+        }
+    }
+
+
+
 
     .sponsorlogo {
         height: 20vh;
@@ -175,22 +355,6 @@
         height: 80vh !important;
     }
 
-    .linkbutton {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 6vh;
-        width: 30vw;
-        border-radius: 3.5vh;
-        background-color: black;
-        color: white;
-        font-size: 3vh;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        letter-spacing: 3px;
-        cursor: pointer;
-    }
-
     .sponsors {
         height: 30vh;
         display: flex;
@@ -204,18 +368,7 @@
         text-align: center;
     }
 
-    .titletxt {
-        position: relative;
-        font-size: 12vh;
-        top: 9vh;
-        color: black;
-        font-family: "Unica One", cursive;
-        font-weight: 400;
-        line-height: 100%;
-        letter-spacing: 7px;
-        word-wrap: break-word;
-        vertical-align: center;
-    }
+
 
     .title {
         text-align: center;
@@ -230,18 +383,7 @@
         text-decoration-color: #980000;
     }
 
-    .text {
-        color: black;
-        font-size: 4vh;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        line-height: 75px;
-        letter-spacing: 0.94px;
-        word-wrap: break-word;
-        padding-right: 8vw;
-        padding-top: 8vh;
-        padding-left: 10vw;
-    }
+
 
     .background {
         filter: brightness(100%);
