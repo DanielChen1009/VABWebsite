@@ -31,8 +31,14 @@
         if (!visible && e.target.id === "dim") {
             visible = true;
         }
+        });
+        const resizeOps = () => {
+            document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+        };
 
-    });})
+        resizeOps();
+        window.addEventListener("resize", resizeOps);
+    })
 
     let visible = true;
     export let includeMainLogo;
@@ -157,7 +163,7 @@
     .hamburger {
         position: fixed;
         top: 1vh;
-        left: 5vh;
+        left: 3vh;
         width: 10vh;
         z-index: 99;
     }

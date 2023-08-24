@@ -18,8 +18,19 @@
     import danielpfp from "$lib/imgs/meettheteamimgs/danielpfp.jpg"
     import haripfp from "$lib/imgs/meettheteamimgs/haripfp.jpg"
     import shasipfp from "$lib/imgs/meettheteamimgs/shasipfp.jpg"
-</script>
+    import {onMount} from "svelte";
 
+    onMount(() => {
+        const resizeOps = () => {
+            document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+        };
+
+        resizeOps();
+        window.addEventListener("resize", resizeOps);
+    })
+
+</script>
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 <div class="banner bannersize">
     <div class="imgwrapper bannersize center">
         <img class="bannerimg" src={banner}>
@@ -245,7 +256,7 @@
         z-index: 20;
 
         color: white;
-        font-size: 15vh;
+        font-size: 15vw;
         font-family: "Unica One", cursive;
         font-weight: 400;
         line-height: 100%;
