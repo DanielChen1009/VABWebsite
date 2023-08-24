@@ -149,7 +149,8 @@
         left:0;
         background-color: rgba(0, 0, 0, 0.5);
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
+        height: fit-content;
         z-index: 98;
     }
 

@@ -208,7 +208,7 @@
 
     @media only screen and (max-width: 768px) {
         .fullsize {
-            width: 190vw;
+            width: 90vw;
             height: auto;
             padding: 10vh 5vw 10vh 5vw;
             display: flex;
@@ -217,7 +217,7 @@
         }
 
         .bannersize {
-            width: 200vw;
+            width: 100vw;
             height: 47vh;
         }
     }
