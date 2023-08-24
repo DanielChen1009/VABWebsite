@@ -190,32 +190,53 @@
         margin-bottom: 2vh;
     }
 
-    .fullsize {
-        height: auto;
-        padding: 10vh 5vw 10vh 5vw;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    @media only screen and (min-width: 768px) {
+        .fullsize {
+            width: 90vw;
+            height: auto;
+            padding: 10vh 5vw 10vh 5vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .bannersize {
+            width: 100vw;
+            height: 47vh;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .fullsize {
+            width: 190vw;
+            height: auto;
+            padding: 10vh 5vw 10vh 5vw;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .bannersize {
+            width: 200vw;
+            height: 47vh;
+        }
     }
 
     .imgwrapper {
         display: flex;
+        position: absolute;
         justify-content: center;
         overflow: hidden;
     }
-    .bannersize {
-        width: 100vw;
-        height: 47vh;
-    }
     .bannerimg {
         display: block;
-        padding: 0;
-        margin: 0;
+        height: 100%;
     }
     .banner {
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     .title {
         position: absolute;
@@ -243,5 +264,6 @@
         padding:0;
         margin:0;
         overscroll-behavior-y: none;
+        overscroll-behavior-x: none;
     }
 </style>

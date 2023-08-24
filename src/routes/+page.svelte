@@ -88,7 +88,6 @@
 
 <style>
     .bgimg {
-        width: 100vw;
         height: 100%;
         position: absolute;
         object-fit: none;

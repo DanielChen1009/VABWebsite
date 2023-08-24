@@ -113,10 +113,6 @@
         border-bottom: 2px solid #980000;
     }
 
-    .dimmed {
-        filter: brightness(50%);
-    }
-
     .bolden {
         font-weight: bolder !important;
     }
@@ -160,25 +156,44 @@
     .hamburger {
         position: fixed;
         top: 1vh;
-        left: 3vw;
-        width: 5vw;
+        left: 5vh;
+        width: 10vh;
         z-index: 99;
     }
+    @media only screen and (min-width: 768px) {
+        .logoimg {
+            position: absolute;
+            top: 2.5vw;
+            left: 34vw;
+            height: 14vw;
+            z-index: 3;
+        }
 
-    .logoimg {
-        position:absolute;
-        top: 2.5vw;
-        left: 34vw;
-        height: 14vw;
-        z-index: 3;
+        .logotxt {
+            position: absolute;
+            top: 5vw;
+            left: 48vw;
+            height: 10vw;
+            z-index: 3;
+        }
     }
 
-    .logotxt {
-        position:absolute;
-        top: 5vw;
-        left: 48vw;
-        height: 10vw;
-        z-index: 3;
+    @media only screen and (max-width: 768px) {
+        .logoimg {
+            position: absolute;
+            top: 20vh;
+            left: 20vw;
+            height: 30vw;
+            z-index: 3;
+        }
+
+        .logotxt {
+            position: absolute;
+            top: 22.5vh;
+            left: 48vw;
+            height: 20vw;
+            z-index: 3;
+        }
     }
 
     .blurb {
