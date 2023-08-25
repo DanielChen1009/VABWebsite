@@ -23,6 +23,9 @@
         width: 100%;
         object-position: 50% {top}%">
     {#if hovered}
-        <slot/>
+        <slot name="hovered"/>
+    {/if}
+    {#if !hovered}
+        <slot name="inert"/>
     {/if}
 </div>

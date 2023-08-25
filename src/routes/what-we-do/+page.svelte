@@ -19,16 +19,18 @@
     function myFunction(x) {
         if (x.matches) { // If media query matches
             isMobile = true;
+            blurb = "Click on the boxes below to learn more about each subteam"
         } else {
             isMobile = false;
         }
     }
     onMount(() => {
-        x = window.matchMedia("(max-width: 850px)")
+        x = window.matchMedia("(max-width: 768px)")
         myFunction(x)
         x.addListener(myFunction)
     })
-    let isMobile
+    let isMobile;
+    let blurb;
     let x;
 </script>
 
@@ -51,6 +53,9 @@
             <li>Provide hands on engineering and business experiences for our members</li>
         </ul>
         If any of our 3 goals pique your interest, you may be a great fit for one of our subteams!
+        <br>
+        <br>
+        {blurb}
     </div>
 {#if !isMobile}
     <div class="stcontainer center color">
@@ -62,7 +67,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <div class="textinternal">
+                <div class="desc">
                     The Hardware team delves into the intricacies of aircraft design, spanning mechanical,
                     thermal, and aeronautical domains. Team members will hone skills in research, design,
                     CAD modeling, construction, and testing of the airframe, propulsion, and electrical subsystems.
@@ -78,7 +83,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <div class="textinternal">
+                <div class="desc">
                     Focused on technological advances, the Software team is centered on developing the
                     flight control system, simulations, air mobility management, and automation controls.
                     We primarily look for individuals majoring in EECS, Computer Science, and Data Science.
@@ -94,7 +99,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <div class="textinternal">
+                <div class="desc">
                     Drawing upon the collective expertise of VTOL at Berkeley, the Consulting team
                     offers services to pioneering companies in the mobility sector. Team members will refine
                     their skills in professional research, business analysis, and impactful presentation.
@@ -110,7 +115,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <div class="textinternal">
+                <div class="desc">
                     The Marketing team is responsible for creating compelling visual and digital
                     content, from flyers and posters to social media interactions. Team members
                     will create photos, videos, and graphics to amplify the club's public engagement.
@@ -126,7 +131,7 @@
                 </div>
             </div>
             <div class="textbox">
-                <div class="textinternal">
+                <div class="desc">
                     Dedicated to forging strong industry partnerships, the Sponsor Relations team
                     tirelessly pursues potential sponsors and keeps them apprised of our progress.
                     Team members will develop expertise in designing pitch decks, crafting presentations,
@@ -139,41 +144,70 @@
 
 {#if isMobile}
     <div class="stcontainer center color">
-            <div class="st">
-                <InfoBox src={hardware} id="tag1" transform={false}>
-                    <div class="internaltxt" transition:fade>
-                        Hardware
-                    </div>
-                </InfoBox>
-            </div>
+        <div class="st">
+            <InfoBox src={hardware} id="tag1" transform={false}>
+                <div slot="inert" class="internaltxt" transition:fade>
+                    Hardware
+                </div>
+                <div slot="hovered" class="hoveredtxt" transition:fade>
+                    The Hardware team delves into the intricacies of aircraft design, spanning mechanical,
+                    thermal, and aeronautical domains. Team members will hone skills in research, design,
+                    CAD modeling, construction, and testing of the airframe, propulsion, and electrical subsystems.
+                    Ideal candidates are from majors like MechE, AeroE, MSE, EECS, and other engineering disciplines.
+                </div>
+            </InfoBox>
+        </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
             <InfoBox src={software} id="tag2" transform={false}>
-                <div class="internaltxt" transition:fade>
+                <div slot="inert" class="internaltxt" transition:fade>
                     Software
+                </div>
+                <div slot="hovered" class="hoveredtxt" transition:fade>
+                    Focused on technological advances, the Software team is centered on developing the
+                    flight control system, simulations, air mobility management, and automation controls.
+                    We primarily look for individuals majoring in EECS, Computer Science, and Data Science.
                 </div>
             </InfoBox>
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
             <InfoBox src={consulting} id="tag3" transform={false}>
-                <div class="internaltxt" transition:fade>
+                <div slot="inert" class="internaltxt" transition:fade>
                     Consulting
+                </div>
+                <div slot="hovered" class="hoveredtxt" transition:fade>
+                    Drawing upon the collective expertise of VTOL at Berkeley, the Consulting team
+                    offers services to pioneering companies in the mobility sector. Team members will refine
+                    their skills in professional research, business analysis, and impactful presentation.
+                    Business Administration majors are especially suited for this subteam.
                 </div>
             </InfoBox>
         </div>
         <div class="st">
             <InfoBox src={marketing} id="tag4" transform={false}>
-                <div class="internaltxt" transition:fade>
+                <div slot="inert" class="internaltxt" transition:fade>
                     Marketing
+                </div>
+                <div slot="hovered" class="hoveredtxt" transition:fade>
+                    The Marketing team is responsible for creating compelling visual and digital
+                    content, from flyers and posters to social media interactions. Team members
+                    will create photos, videos, and graphics to amplify the club's public engagement.
+                    We welcome individuals with professional experience in related fields.
                 </div>
             </InfoBox>
         </div>
         <div style="flex-basis: 100%; height: 0"></div>
         <div class="st">
             <InfoBox src={sponsorr} id="tag5" transform={false}>
-                <div class="internaltxt" transition:fade>
+                <div slot="inert" class="internaltxt" transition:fade>
                     Sponsor Relations
+                </div>
+                <div slot="hovered" class="hoveredtxt" transition:fade>
+                    Dedicated to forging strong industry partnerships, the Sponsor Relations team
+                    tirelessly pursues potential sponsors and keeps them apprised of our progress.
+                    Team members will develop expertise in designing pitch decks, crafting presentations,
+                    and reaching out to potential corporate partners.
                 </div>
             </InfoBox>
         </div>
@@ -192,7 +226,7 @@
         background-color: rgba(152, 0, 0, 0.80);
 
         color: white;
-        font-size: 5vh;
+        font-size: 3vw;
         font-family: "Unica One", sans-serif;
         font-weight: 400;
         line-height: 75px;
@@ -215,7 +249,7 @@
         overflow: hidden;
         border-radius: 5vh;
     }
-    .textinternal {
+    .desc {
         padding: 3vw;
 
         color: black;
@@ -245,41 +279,51 @@
         margin-top: 10vh;
         height: 40vh;
     }
-    .internaltxt {
-        color: black;
-        font-size: 200%;
-        font-family: "Unica One", cursive;
-        font-weight: 400;
-        line-height: 75px;
-        letter-spacing: 6.65px;
-        word-wrap: break-word;
-
-        background-color: rgba(255, 255, 255, 0.6);
-
+    .hoveredtxt {
         position: absolute;
-        top:0;
-        z-index: 99;
-        height: 100%;
-        width: 90%;
+        height: 80%;
+        color: black;
+
         display: flex;
         justify-content: center;
+        align-items: center;
+        word-wrap: break-word;
+        font-size: 3vw;
+        font-family: "Open Sans", cursive;
+        font-weight: 200;
+        line-height: 170%;
+        letter-spacing: 0.15vh;
+        background-color: rgba(255, 255, 255, 0.8);
+
+        z-index: 99;
+        padding: 10%;
+    }
+    .internaltxt {
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        width: 90%;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
+        word-wrap: break-word;
+        font-size: 6vw;
+        font-family: "Unica One", cursive;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 1vh;
+        background-color: rgba(152, 0, 0, 0.80);
+
+        z-index: 99;
+        padding: 5%;
     }
     .color {
         background-color: rgba(250, 250, 250, 0.98);
     }
-    .text {
-        color: black;
-        font-size: 3vh;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        line-height: 130%;
-        letter-spacing: 1px;
-        word-wrap: break-word
-    }
+
 
     .list {
         list-style-type: decimal;
@@ -303,7 +347,7 @@
     .st {
         position:relative;
         aspect-ratio: 4/3;
-        width: 60vw;
+        width: 80vw;
         margin: 5vw;
         border-radius: 5vh;
         overflow: hidden;
@@ -331,27 +375,76 @@
         margin: 0;
         width: 100vw;
     }
-    .title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 20;
 
-        color: white;
-        font-size: 15vh;
-        font-family: "Unica One", cursive;
-        font-weight: 400;
-        line-height: 16vh;
-        letter-spacing: 6.65px;
-        word-wrap: break-word;
+    @media only screen and (min-width: 768px) {
+        .text {
+            color: black;
+            font-size: 1.5vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: 1px;
+            word-wrap: break-word
+        }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
 
-        background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 8vw;
+            font-family: "Unica One", cursive;
+            font-weight: 400;
+            line-height: 16vh;
+            letter-spacing: 6.65px;
+            word-wrap: break-word;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5);
+        }
     }
+
+    @media only screen and (max-width: 768px) {
+        .text {
+            color: black;
+            font-size: 3vw;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 300;
+            line-height: 130%;
+            letter-spacing: 1px;
+            word-wrap: break-word
+        }
+
+        .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 20;
+
+            color: white;
+            font-size: 15vw;
+            font-family: "Unica One", cursive;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: 6.65px;
+            word-wrap: break-word;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+
 
     :global(body) {
         padding:0;
