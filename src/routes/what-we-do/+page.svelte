@@ -235,6 +235,7 @@
         text-align: center;
     }
     .stimage {
+        width: fit-content;
         height: 100%;
         filter: brightness(50%);
     }
