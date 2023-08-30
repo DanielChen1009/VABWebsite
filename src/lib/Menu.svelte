@@ -79,7 +79,9 @@
         <button class="pagenavbut" on:click={() => {goto("/meet-the-team");}}>Meet the Team</button>
 <!--        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>-->
 <!--        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>-->
-        <button class="pagenavbut" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48"); visible = true}}>Join Us!</button>
+        <button class="pagenavbut" on:click={() => {goto("https://linktr.ee/vatb"); visible = true}}>Join Us!</button>
+        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/1H0rnqDSQvxm_Ts2l6m8HJLUCT--j7mLbsWFkAY_qxvU"); visible = true}}>Engineering Application</button>
+        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/1ccl6zjIlmSbnQUjOkGFYJfPsiEbtbUxHwojbrDVUHiM"); visible = true}}>Business Application</button>
     </div>
 {/if}
 
