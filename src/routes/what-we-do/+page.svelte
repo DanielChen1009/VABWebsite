@@ -41,7 +41,7 @@
         <img class="bannerimg" src={bannerbg}>
     </div>
     <div class="title bannersize">
-        About the Club
+        What We Do
     </div>
 </div>
 
@@ -395,7 +395,7 @@
             z-index: 20;
 
             color: white;
-            font-size: 8vw;
+            font-size: 10vw;
             font-family: "Unica One", cursive;
             font-weight: 400;
             line-height: 16vh;
@@ -407,7 +407,7 @@
             align-items: center;
             text-align: center;
 
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
         }
     }
 

@@ -18,6 +18,7 @@
     import danielpfp from "$lib/imgs/meettheteamimgs/danielpfp.jpg"
     import haripfp from "$lib/imgs/meettheteamimgs/haripfp.jpg"
     import shasipfp from "$lib/imgs/meettheteamimgs/shasipfp.jpg"
+    import senguptapfp from "$lib/imgs/meettheteamimgs/senguptapfp.jpg"
     import {onMount} from "svelte";
 
     onMount(() => {
@@ -38,10 +39,12 @@
         <img class="bannerimg" src={banner}>
     </div>
     <div class="title bannersize">
-        Meet Our Leadership
+        Meet the Team
     </div>
 </div>
-
+<div class="section-header">
+    Officers
+</div>
 <div class="fullsize">
     <div class="entrycontainer">
         <div class="titlecontainer">Alan Zhang</div>
@@ -144,10 +147,48 @@
         </div>
     </div> <!-- Cindy !-->
 </div>
+<div class="section-header">
+    Advisors
+</div>
+<div class="fullsize">
+    <div class="entrycontainer">
+        <div class="titlecontainer">Raja Sengupta</div>
+        <div class="infocontainer">
+            <InfoBox src={senguptapfp} id="p1" transform={true} top={90}>
+                <div slot="hovered" transition:fade={{duration: 200}} class="textinfo" style="font-size: 1.25vh;">
+                    Raja Sengupta is a Professor of Civil and Environmental Engineering at UC Berkeley.
+                    Sengupta’s research focuses on automated cars, drones, connected cars, smartphone apps
+                    for economics & transportation, wireless networking, and control theory. He likes to do
+                    research on the industry and get it into the marketplace, and he holds car-to-road networking
+                    patents with Toyota, a UAV patent with BAE Aerospace, and car-to-car networking contributions
+                    standardized by the SAE into J2945. Sengupta has been an advisor to the World Bank, is a recipient
+                    of the USDOT’s Connected Vehicle Technology award in 2011, the UC Berkeley Energy and Climate
+                    Lectures Innovation award in 2014, and has authored over a hundred papers spanning control theory,
+                    networking, drones, and transportation.
+                </div>
+            </InfoBox>
+        </div>
+    </div> <!-- Raja !-->
+</div>
 
 <Menu includeMainLogo={false}/>
 
 <style>
+    .section-header {
+        display: flex;
+        width: 100%;
+        height: 10vw;
+        color: black;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 10vh;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+
+        padding: 5vh 0 5vh 0;
+    }
     .textinfo {
         color: black;
         font-size: 1.75vh;
@@ -204,7 +245,7 @@
         .fullsize {
             width: 90vw;
             height: auto;
-            padding: 10vh 5vw 10vh 5vw;
+            padding: 0 5vw 0 5vw;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -220,7 +261,7 @@
         .fullsize {
             width: 90vw;
             height: auto;
-            padding: 10vh 5vw 10vh 5vw;
+            padding: 0 5vw 0 5vw;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -255,7 +296,7 @@
         z-index: 20;
 
         color: white;
-        font-size: 13vw;
+        font-size: 10vw;
         font-family: "Unica One", cursive;
         font-weight: 400;
         line-height: 100%;

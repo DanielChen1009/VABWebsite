@@ -273,7 +273,7 @@
         z-index: 20;
 
         color: white;
-        font-size: 15vh;
+        font-size: 10vw;
         font-family: "Unica One", cursive;
         font-weight: 400;
         line-height: 100%;
