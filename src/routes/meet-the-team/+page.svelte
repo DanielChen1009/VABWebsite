@@ -19,6 +19,7 @@
     import haripfp from "$lib/imgs/meettheteamimgs/haripfp.jpg"
     import shasipfp from "$lib/imgs/meettheteamimgs/shasipfp.jpg"
     import senguptapfp from "$lib/imgs/meettheteamimgs/senguptapfp.jpg"
+    import frankpfp from "$lib/imgs/meettheteamimgs/frankpfp.jpg"
     import {onMount} from "svelte";
 
     onMount(() => {
@@ -169,6 +170,23 @@
             </InfoBox>
         </div>
     </div> <!-- Raja !-->
+    <div class="entrycontainer">
+        <div class="titlecontainer">Frank Ketcham</div>
+        <div class="infocontainer">
+            <InfoBox src={frankpfp} id="p1" transform={true} top={90}>
+                <div slot="hovered" transition:fade={{duration: 200}} class="textinfo" style="font-size: 1.25vh;">
+                    Frank is a highly experienced aviation professional with over 35 years of experience. He holds
+                    several FAA ratings and is certified to fly a multitude of aircraft including the Airbus A320,
+                    A330 and A350 and is currently a pilot for a major US Airline. He has over 20,000 hours of both
+                    domestic and international flying experience. In 2020 he completed building of a Vans RV-14A
+                    experimental aircraft with state of the area avionics. He is experienced in both manned and
+                    unmanned systems and holds an FAA Remote Pilot FAR 107 license and has a variety of experience
+                    with FAA certification and airworthiness. Additionally, he has  held a staff position as a
+                    Commercial Aviation Specialist at UC Berkeley School of Engineering since 2008.
+                </div>
+            </InfoBox>
+        </div>
+    </div> <!-- Frank !-->
 </div>
 
 <Menu includeMainLogo={false}/>
