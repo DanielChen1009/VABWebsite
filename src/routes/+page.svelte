@@ -43,22 +43,22 @@
         Maiden Voyage 5.1.2024
     </div>
     <div style="height:100%; width: 100%; z-index: 2; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
-    <div class="buttondiv removebg" style="width:30vw;position:relative;top:80vh;margin-right: 1vw;z-index: 99">
-        <button class="linkbutton" style="width:30vw;height: fit-content;padding: 1vh" on:click={() => {goto("https://docs.google.com/forms/d/1H0rnqDSQvxm_Ts2l6m8HJLUCT--j7mLbsWFkAY_qxvU")}}>
-            <span class="buttontxt">
-                Engineering Application
-            </span>
-            <img class="arrow" src={ButtonArrow}>
-        </button>
-    </div>
-    <div class="buttondiv removebg" style="width:30vw;position:relative;top:80vh;margin-left: 1vw;z-index: 99">
-        <button class="linkbutton" style="width:30vw;height: fit-content;padding: 1vh" on:click={() => {goto("https://docs.google.com/forms/d/1ccl6zjIlmSbnQUjOkGFYJfPsiEbtbUxHwojbrDVUHiM")}}>
-            <span class="buttontxt">
-                Business Application
-            </span>
-            <img class="arrow" src={ButtonArrow}>
-        </button>
-    </div>
+<!--    <div class="buttondiv removebg" style="width:30vw;position:relative;top:80vh;margin-right: 1vw;z-index: 99">-->
+<!--        <button class="linkbutton" style="width:30vw;height: fit-content;padding: 1vh" on:click={() => {goto("https://docs.google.com/forms/d/1H0rnqDSQvxm_Ts2l6m8HJLUCT&#45;&#45;j7mLbsWFkAY_qxvU")}}>-->
+<!--            <span class="buttontxt">-->
+<!--                Engineering Application-->
+<!--            </span>-->
+<!--            <img class="arrow" src={ButtonArrow}>-->
+<!--        </button>-->
+<!--    </div>-->
+<!--    <div class="buttondiv removebg" style="width:30vw;position:relative;top:80vh;margin-left: 1vw;z-index: 99">-->
+<!--        <button class="linkbutton" style="width:30vw;height: fit-content;padding: 1vh" on:click={() => {goto("https://docs.google.com/forms/d/1ccl6zjIlmSbnQUjOkGFYJfPsiEbtbUxHwojbrDVUHiM")}}>-->
+<!--            <span class="buttontxt">-->
+<!--                Business Application-->
+<!--            </span>-->
+<!--            <img class="arrow" src={ButtonArrow}>-->
+<!--        </button>-->
+<!--    </div>-->
 </div>
 
 
