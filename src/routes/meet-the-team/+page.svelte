@@ -60,20 +60,6 @@
         </div>
     </div> <!-- Alan !-->
     <div class="entrycontainer">
-        <div class="titlecontainer">Alvin Xiao</div>
-        <div class="infocontainer">
-            <InfoBox src={alvinpfp} id="p2" transform={true} top={10}>
-                <div slot="hovered" transition:fade={{duration: 200}} class="textinfo">Alvin, an undergraduate
-                    studying MSE and Business, boasts extensive venture capital experience.
-                    He raised ~$15M for a portfolio company and was selected to help lead
-                    his firm’s most recent investment fund of ~$460M. He's also worked as a PM,
-                    helping Tencent CEO, Ma Huateng, confirm game event development and company
-                    acquisition details.
-                </div>
-            </InfoBox>
-        </div>
-    </div> <!-- Alvin !-->
-    <div class="entrycontainer">
         <div class="titlecontainer">Hari Parthasarathy</div>
         <div class="infocontainer">
             <InfoBox src={haripfp} id="p3" transform={true} top={0}>
