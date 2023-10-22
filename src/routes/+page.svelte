@@ -96,7 +96,6 @@
     </div>
     <div class="sponsors">
         <img class="sponsorlogo" src={met} onclick="window.open('https://berkeley.edu/', '_blank')">
-        <img class="sponsorlogo" src={futurex} onclick="window.open('https://www.futurexcapital.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
