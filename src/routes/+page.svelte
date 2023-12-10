@@ -15,6 +15,8 @@
     import ButtonArrow from "$lib/imgs/ButtonArrow.svg";
     import futurex from "$lib/imgs/futurex.svg";
     import met from "$lib/imgs/met.png";
+    import altium from "$lib/imgs/Altium.svg";
+    import ansys from "$lib/imgs/ANSYS_logo.png"
     import render2 from "$lib/imgs/render2.png";
 
 
@@ -96,6 +98,8 @@
     </div>
     <div class="sponsors">
         <img class="sponsorlogo" src={met} onclick="window.open('https://berkeley.edu/', '_blank')">
+        <img class="sponsorlogo" src={altium} onclick="window.open('https://altium.com/', '_blank')">
+        <img class="sponsorlogo" style="width:20%;height: auto;" src={ansys} onclick="window.open('https://ansys.com/', '_blank')">
     </div>
     <div class="buttondiv">
         <button class="linkbutton">
