@@ -41,9 +41,9 @@
         Introducing UC Berkeley’s first and only student-made, human-carrying VTOL aircraft:
         <span style="font-weight: 400">Sparrow</span>
     </div>
-    <div class="blurb2">
-        Maiden Voyage 5.1.2024
-    </div>
+<!--    <div class="blurb2">-->
+<!--        Maiden Voyage 5.1.2024-->
+<!--    </div>-->
     <div style="height:100%; width: 100%; z-index: 2; position:absolute; background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%)"></div>
 <!--    <div class="buttondiv removebg" style="width:30vw;position:relative;top:80vh;margin-right: 1vw;z-index: 99">-->
 <!--        <button class="linkbutton" style="width:30vw;height: fit-content;padding: 1vh" on:click={() => {goto("https://docs.google.com/forms/d/1H0rnqDSQvxm_Ts2l6m8HJLUCT&#45;&#45;j7mLbsWFkAY_qxvU")}}>-->
@@ -82,14 +82,14 @@
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
         transport? We hope you’ll <a class="link" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>join us</a> on the path to our maiden voyage!
     </div>
-    <div class="buttondiv removebg">
-        <button class="linkbutton" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>
-            <span class="buttontxt">
-                Become a Member
-            </span>
-            <img class="arrow" src={ButtonArrow}>
-        </button>
-    </div>
+<!--    <div class="buttondiv removebg">-->
+<!--        <button class="linkbutton" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>-->
+<!--            <span class="buttontxt">-->
+<!--                Become a Member-->
+<!--            </span>-->
+<!--            <img class="arrow" src={ButtonArrow}>-->
+<!--        </button>-->
+<!--    </div>-->
 </div>
 
 <div class="cutoff textbg frame" style="margin: 0 2vw 2vh 2vw;">
