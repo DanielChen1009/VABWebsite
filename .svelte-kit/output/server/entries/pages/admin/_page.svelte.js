@@ -30,7 +30,6 @@ function checkTeamInterest(entry) {
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { data } = $$props;
-  console.log(data.entries);
   const config = { runtime: "edge" };
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
