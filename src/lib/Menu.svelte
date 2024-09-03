@@ -79,7 +79,8 @@
         <button class="pagenavbut" on:click={() => {goto("/meet-the-team");}}>Meet the Team</button>
 <!--        <button class="pagenavbut" on:click={() => {goto("/members-partners");}}>Members & Partners</button>-->
 <!--        <button class="pagenavbut" on:click={() => {goto("/sponsors-clients");}}>Sponsors & Clients</button>-->
-        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/e/1FAIpQLSdkQBg3J5mFe9zi3aKACAkQKn1AL1d5BYlJW6aMLrzLxIw0bA/viewform?usp=sf_link"); visible = true}}>Join Us!</button>
+        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/e/1FAIpQLSdkQBg3J5mFe9zi3aKACAkQKn1AL1d5BYlJW6aMLrzLxIw0bA/viewform?usp=sf_link"); visible = true}}>Interest Form</button>
+        <button class="pagenavbut" on:click={() => {goto("https://forms.gle/ekSC9BBSqd5N7VeYA"); visible = true}}>Round 1 Application</button>
 <!--        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/e/1FAIpQLSdkQBg3J5mFe9zi3aKACAkQKn1AL1d5BYlJW6aMLrzLxIw0bA/viewform?usp=sf_link"); visible = true}}>Interest Form</button>-->
 <!--        <button class="pagenavbut" on:click={() => {goto("https://docs.google.com/forms/d/1ccl6zjIlmSbnQUjOkGFYJfPsiEbtbUxHwojbrDVUHiM"); visible = true}}>Business Application</button>-->
     </div>

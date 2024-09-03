@@ -80,16 +80,16 @@
     <div class="text">
         We are VTOL at Berkeley: Berkeley’s only student-run organization dedicated to building
         a human-carrying, vertical takeoff and landing vehicle. Interested in aviation, and sustainable
-        transport? We hope you’ll <a class="link" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>join us</a> on the path to our maiden voyage!
+        transport? We hope you’ll <a class="link" on:click={() => {goto("https://forms.gle/ekSC9BBSqd5N7VeYA")}}>join us</a> on the path to our maiden voyage!
     </div>
-<!--    <div class="buttondiv removebg">-->
-<!--        <button class="linkbutton" on:click={() => {goto("https://forms.gle/PhSZUxkFZuew4gf48")}}>-->
-<!--            <span class="buttontxt">-->
-<!--                Become a Member-->
-<!--            </span>-->
-<!--            <img class="arrow" src={ButtonArrow}>-->
-<!--        </button>-->
-<!--    </div>-->
+    <div class="buttondiv removebg">
+        <button class="linkbutton" on:click={() => {goto("https://forms.gle/ekSC9BBSqd5N7VeYA")}}>
+            <span class="buttontxt">
+                Application
+            </span>
+            <img class="arrow" src={ButtonArrow}>
+        </button>
+    </div>
 </div>
 
 <div class="cutoff textbg frame" style="margin: 0 2vw 2vh 2vw;">
